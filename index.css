@@ -9,19 +9,8 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: #fff;
-    background: linear-gradient(#FFFFFF, 0%, #1C1B21);
-    background-repeat: no-repeat;
+    background: linear-gradient(#FFFFFF, 0%, #1C1B21) no-repeat center;
     background-size: cover;
-    height: 100vh;
-    background-position: center;
-}
-
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 
@@ -31,6 +20,15 @@ body {
 }
 
 /* HEADER STYLES START */
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 
 .header-wrapper {
     display: flex;
@@ -105,15 +103,105 @@ body {
 
 
 /* PROMO-PHOTOS STYLES START */
+.promo-photos-wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
 
 
+.promo-photos {
+    gap: 30px;
+    display: flex;
+    text-align: center;
+}
 
 
+.promo-photo-container {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background: url('./data/274px-Victor_Tsoi_1986_cropped.jpg') no-repeat center;
+    background-size: cover;
+    border-bottom-right-radius: 16pt;
+    border-top-left-radius: 16pt;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
 
 
+.container-cover {
+    width: 350px;
+    height: 60px;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(138, 14, 15, 0.7);
+    border-top-left-radius: 16pt;
+}
+
+
+.promo-title {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.left-arrow {
+    text-align: left;
+    margin-top: 120px;
+}
+
+
+.right-arrow {
+    text-align: right;
+    margin-top: 120px;
+}
 
 
 /* PROMO-PHOTOS STYLES END */
+
+
+/* DESCRIPTION STYLES START */
+
+
+.wrapper-full {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+.description-photo {
+    margin-right: 30px;
+}
+
+
+.title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.description-title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 19px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+}
+
+
+/* DESCRIPTION STYLES END */
+
 
 /* header {
     position: fixed;
