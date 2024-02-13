@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    background: linear-gradient(#FFFFFF, 0%, #1C1B21);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* HEADER STYLES START */
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 21px;
+}
+
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 19px;
+}
+
+
+.header-item {
+    margin-right: 54px;
+}
+
+
+.header-item:last-child {
+    margin-right: 0;
+}
+
+
+.header-link {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.header-link:hover, .header-link:focus, .header-link:active {
+    color: #8A0E0F;
+    opacity: 0.75;
+}
+
+
+/* HEADER STYLES END */
+
+/* INTRO STYLES START */
+
+.intro {
+    height: 100vh;
+    background: url(./data/back_photo.png) no-repeat center;
+    background-size: cover;
+    padding-top: 412px;
+}
+
+
+.intro-title {
+    max-width: 158px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 10px;
+}
+
+
+.intro-subtitle {
+    max-width: 530px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    line-height: 54px;
+}
+
+
+/* PROMO-PHOTOS STYLES START */
+
+
+
+
+
+
+
+
+/* PROMO-PHOTOS STYLES END */
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url('./data/back_photo.webp');
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000000;
+}
+
+
+header .navbar {
+    display: flex;
+}
+
+
+header .navbar li {
+    margin: 54px;
+}
+
+
+header .navbar li a {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 2.63rem;
+    background-repeat: no-repeat;
+}
+
+
+header .navbar li a:hover {
+    color: '#8A0E0F'
+} */
