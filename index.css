@@ -22,11 +22,17 @@ body {
 /* HEADER STYLES START */
 
 
+.header-ava {
+    opacity: 0.5;
+}
+
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9;
 }
 
 
@@ -79,6 +85,7 @@ body {
 .intro {
     height: 100vh;
     background: url(./data/back_photo.png) no-repeat center;
+    opacity: 0.7;
     background-size: cover;
     padding-top: 412px;
 }
@@ -174,24 +181,30 @@ body {
 .wrapper-full {
     max-width: 1110px;
     margin: 0 auto;
-}
-
-
-.description-photo {
-    margin-right: 30px;
+    padding-top: 179px;
 }
 
 
 .title-wrapper {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+
+
+.description-photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-top: 23px;
+    width: 64px;
+    height: 31px;
 }
 
 
 .description-title {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 19px;
     font-family: Poppins;
     font-size: 48px;
     font-weight: 700;
@@ -200,43 +213,187 @@ body {
 }
 
 
-/* DESCRIPTION STYLES END */
+.description-bio-text {
+    padding-top: 60px;
+    min-width: 540px;
+    height: 120px;
+    opacity: 0.7;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
 
 
-/* header {
-    position: fixed;
-    top: 0;
-    left: 0;
+.desc-photos {
+    display: flex;
+    width: 445px;
+    height: 466px;
+    position: relative;
     right: 0;
-    background-image: url('./data/back_photo.webp');
-    width: 100%;
+    top: 0;
+    margin-top: -200px;
+}
+
+
+.front-desc-photo img {
+    width: 350px;
+    height: 400px;
+    border-bottom-right-radius: 16pt;
+    border-top-left-radius: 16pt;
+}
+
+
+.front-desc-photo {
+    display: inline-block;
+    position: absolute;
+    padding-left: 665px;
+    z-index: 2;
+}
+
+
+.back-desc-photo img {
+    width: 350px;
+    height: 400px;
+    border-bottom-right-radius: 16pt;
+    border-top-left-radius: 16pt;
+}
+
+
+.back-desc-photo {
+    display: inline-block;
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    margin-left: 760px;
+    padding-top: 57px;
+    border-bottom-right-radius: 16pt;
+    border-top-left-radius: 16pt;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+
+.desc-information {
+    padding-bottom: 5px;
+}
+
+
+.info-items-first-line {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000000;
 }
 
 
-header .navbar {
+.info-item-2 {
+    position: absolute;
+    margin-left: 300px;
+}
+
+
+.desc-information img {
+    margin-right: 20px;
+}
+
+
+.info-items-second-line {
     display: flex;
+    padding-top: 30px;
 }
 
 
-header .navbar li {
-    margin: 54px;
-}
-
-
-header .navbar li a {
+.info-item {
+    display: flex;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 600;
-    transition: 0.3s;
-    padding: 2.63rem;
-    background-repeat: no-repeat;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 
-header .navbar li a:hover {
-    color: '#8A0E0F'
-} */
+/* DESCRIPTION STYLES END */
+
+
+/* GROUP STRUCTURE STYLES START  */
+
+
+.group-title {
+    display: flex;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.group-members {
+    padding-top: 81px;
+    display: flex;
+}
+
+
+.group-member {
+    margin-right: 91px;
+}
+
+
+.group-member:last-child {
+    margin-right: 0;
+}
+
+
+.f-l-text {
+    padding-top: 16px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+.s-l-text {
+    padding-top: 11px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+
+/* GROUP STRUCTURE STYLES END */
+
+
+
+
+/* REPERTUAR STYLES START */
+
+
+.wrapper-repertuar {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+
+.repertuar-title {
+    float: right;
+    display: flex;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+/* REPERTUAR STYLES END */
