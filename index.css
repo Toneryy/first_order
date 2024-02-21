@@ -74,6 +74,7 @@ body {
 
 .header-link:hover, .header-link:focus, .header-link:active {
     color: #8A0E0F;
+    text-decoration: none;
     opacity: 0.75;
 }
 
@@ -181,7 +182,7 @@ body {
 .wrapper-full {
     max-width: 1110px;
     margin: 0 auto;
-    padding-top: 179px;
+    padding-top: 129px;
 }
 
 
@@ -385,7 +386,7 @@ body {
 
 
 .repertuar-title {
-    float: right;
+    padding-left: 570px;
     display: flex;
     font-family: Poppins;
     font-size: 48px;
@@ -396,4 +397,388 @@ body {
 }
 
 
+.music-list {
+    display: flex;
+    font-family: Poppins;
+}
+
+
+.circle {
+    display: inline-block;
+    margin-right: 43px;
+}
+
+
+.square {
+    display: table-cell;
+    overflow-y: scroll;
+    margin-top: 80px;
+    width: 502px;
+    height: 313px;
+    border-radius: 30px 30px 30px 0px;
+    background: rgb(47, 47, 47) no-repeat center;
+    background-size: 100vh;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.music-items {
+    padding-left: 17px;
+    padding-top: 23px;
+}
+
+
+.red-text-songs {
+    padding: 0 16px 0 16px;
+    color: rgb(165, 17, 17);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
 /* REPERTUAR STYLES END */
+
+
+
+/* PROMO-VIDEO STYLES START */
+
+
+.wrapper-promo {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 166px;
+}
+
+
+.promo-video-title {
+    display: flex;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.promo-video {
+    position: relative;
+    padding-top: 130px;
+    width: 1110px;
+    height: 500px;
+    background: url('./data/274px-Victor_Tsoi_1986_cropped.jpg');
+    border-radius: 30px 0px 30px 0px;
+}
+
+
+.promo-video iframe {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px 30px 0px;
+}
+
+
+/* PROMO-VIDEO STYLES END */
+
+
+
+/* COOPERATION STYLES START */
+
+
+.wrapper-stages {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+
+.stages-title {
+    display: flex;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+/* COOPERATION STYLES END */
+
+
+
+/* SERVICES STYLES START */
+
+
+.wrapper-services {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+
+.services-title {
+    display: flex;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.services-squares {
+    padding-top: 130px;
+    display: flex;
+}
+
+
+.spb {
+    width: 387px;
+    height: 234px;
+    margin-right: 302px;
+    border-radius: 30px 0px 30px 0px;
+    background: rgb(47, 47, 47);
+}
+
+
+.spb:last-child {
+    margin-right: 0;
+}
+
+
+.out-spb {
+    width: 387px;
+    height: 234px;
+    border-radius: 00px 30px 0px 30px;
+    background: rgb(47, 47, 47);
+}
+
+
+.first-square-line {
+    padding-left: 61px;
+    padding-top: 29px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.second-square-line {
+    padding-left: 94px;
+    padding-top: 35px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.out-spb .first-square-line {
+    padding-left: 54px;
+    padding-top: 29px;
+}
+
+
+.out-spb .second-square-line {
+    padding-left: 58px;
+    padding-top: 25px;
+}
+
+
+/* SERVICES STYLES END */
+
+
+
+/* WANT-WORK STYLES START */
+
+
+.wrapper-call {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 219px;
+}
+
+
+.want-work-title {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.want-work-subtitle .first-line-sub {
+    width: 693px;
+    height: 36px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 0.5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.want-work-subtitle .second-line-sub {
+    width: 377px;
+    height: 36px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 4.5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.want-work-subtitle .second-line-sub strong {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.order-call button {
+    width: 302px;
+    height: 82px;
+    padding: 23px 70.5px 23px 70.5px;
+    outline: none;
+    border: none;
+    margin-top: 29px;
+    border-radius: 10px;
+    background-color: rgb(165, 17, 17);
+    cursor: pointer;
+
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    /* box-shadow: 0px 5px 10px #000; */
+}
+
+
+.order-button:hover, .order-button button:focus, .order-button:active {
+    background-color: #e21818;
+    border-color: #971e1e;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 0 0.2rem ;
+}
+
+
+
+/* WANT-WORK STYLES END */
+
+
+
+/* CALL-YOURSELF STYLES START */
+
+
+.wrapper-call-yourself {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+
+.call-yourself-title {
+    padding-bottom: 72px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.call-yourself-back-photo {
+    width: 1110px;
+    height: 313px;
+    padding-top: 88px;
+    background: url('./data/back-call-photo.png') no-repeat center;
+    background-size: 100%;
+}
+
+
+.call-yourself-text {
+    width: 520px;
+    height: 136px;
+    padding: 5px 80px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.call-yourself-line {
+    padding-top: 24.5px;
+    padding-left: 80px;
+}
+
+
+.call-yourself-phone {
+    padding-top: 25.5px;
+    padding-left: 80px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
+
+.call-yourself-phone a {
+    text-decoration: none;
+    color: rgb(232, 45, 45);
+}
+
+
+.call-yourself-photo {
+    width: 370px;
+    height: 483px;
+    margin-top: -369px;
+    /* transform: translateY(-76.2%); */
+    float: right;
+    margin-right: 80px;
+    border-radius: 30px 0px 30px 0px;
+    background: url('./data/274px-Victor_Tsoi_1986_cropped.jpg') no-repeat center;
+    background-size: 100%;
+}
+
+
+/* CALL-YOURSELF STYLES END */
