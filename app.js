@@ -46,23 +46,29 @@ function scrollToSection(selector) {
  */
 function submitPhone(event) {
     event.preventDefault();
-    let phoneNumber = document.getElementById('phoneNumber').value;
-    
-    // Придумать куда будет идти запрос (разобраться с API почты)
-    fetch('http://localhost:8080/api/mail', {
-        method: 'POST',
-        body: JSON.stringify({ phoneNumber: phoneNumber }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(document.getElementById('phoneNumber').value = '')
-    .then(document.getElementById('agrcheckbox').checked = false)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.error('Ошибка:', error);
-    });
+
+    let now = new Date().getTime();
+    const then = localStorage.getItem("previous-request-time");
+    if (then == null || Number(then) + 5000 < now) {
+        localStorage.setItem("previous-request-time", now)
+        let phoneNumber = document.getElementById('phoneNumber').value;
+        // Придумать куда будет идти запрос (разобраться с API почты)
+        fetch('http://localhost:8080/api/mail', {
+            method: 'POST',
+            body: JSON.stringify({ phoneNumber: phoneNumber }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(document.getElementById('phoneNumber').value = '')
+        .then(document.getElementById('agrcheckbox').checked = false)
+        .then(response => response.json())
+        .then(alert("Письмо успешно отправлено!"))
+        .catch(error => {
+            console.error('Ошибка:', error);
+        });;
+    } else {
+        alert("Слишком много запросов. Подождите...")
+    }
+
 }
