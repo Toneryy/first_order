@@ -19,11 +19,23 @@
                 target.scrollIntoView({ behavior: 'smooth' });
             }
         }
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            var targetElement = document.getElementById('anchor-description');
+            var targetElementPosition = targetElement.getBoundingClientRect();
+
+            if (targetElementPosition.top < window.innerHeight) {
+                // Change to more pleasent color
+                header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+            } else {
+                header.style.backgroundColor = 'rgba(28, 27, 33, 0.3)';
+            }
+        });
     </script>
 
     <div id="anchor-top"></div>
 
-    <header class="header">
+    <header id="header" class="header">
         <div class="wrapper">
             <div class="header-wrapper">
                 <div class="header-ava">
@@ -54,7 +66,6 @@
             </div>
         </div>
     </header>
-
     <main class="main">
         <section class="intro">
             <div class="wrapper">
