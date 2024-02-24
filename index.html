@@ -9,29 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
     <title>Рок группа</title>
+    <script src="app.js"></script>
 </head>
 <body>
-    <script>
-        function scrollToSection(selector) {
-            event.preventDefault();
-            const target = document.querySelector(selector);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('header');
-            var targetElement = document.getElementById('anchor-description');
-            var targetElementPosition = targetElement.getBoundingClientRect();
-
-            if (targetElementPosition.top < window.innerHeight) {
-                // Change to more pleasent color
-                header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
-            } else {
-                header.style.backgroundColor = 'rgba(28, 27, 33, 0.3)';
-            }
-        });
-    </script>
 
     <div id="anchor-top"></div>
 
@@ -626,34 +606,37 @@
 
     </main>
 
-    <footer>
-        <section class="any-questions">
-            <div class="wrapper-questions">
-                <div class="questions-title">
-                    <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
-                </div>
+    <section class="any-questions">
+        <div class="wrapper-questions">
 
-                <div class="questions-form">
-                    <div class="form-title">
-                        <h3>Оставьте заявку</h3>
-                    </div>
-                    <div class="contact-container">
-                        <div class="form-phone">
-                            <input type="phone" class="input-phone" placeholder="Номер телефона">
-                        </div>
-    
-                        <div class="send-form">
-                            <button class="contact-button" onclick="location.href='#'">СВЯЗАТЬСЯ С НАМИ</button>
-                        </div>
-                    </div>
+            <div class="questions-title"><h2>ОСТАЛИСЬ ВОПРОСЫ?</h2></div>
 
-                    <div class="checkbox">
+            <div class="questions-form">
+                <div class="form-title"><h3>Оставьте заявку</h3></div>
+                <br>
+                <div class="contact-container">
+                    
+                    <div class="form-phone">
+                        <input type="phone" class="input-phone" placeholder="&#128222; Номер телефона"></div>
 
-                    </div>
+                    <div class="send-form">
+                        <button class="contact-button" onclick="location.href='#'">СВЯЗАТЬСЯ С НАМИ</button></div>
+
+                </div>   
+                <br><br>
+                <div class="agreement-checkbox-text">
+                    <input class="agreement-checkbox" type="checkbox"/>
+                    <a class="agreement-text">Нажамая на кнопку, вы соглашаетесь с 
+                        <u>условиями обработки персональных данных </u>
+                    </a>
                 </div>
             </div>
-        </section>
+            
 
+        </div>
+    </section>
+
+    <footer>
         <section class="info">
             <div class="info-container">
                 <div class="managers">

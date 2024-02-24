@@ -13,3 +13,22 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     })
 });
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    var targetElement = document.getElementById('anchor-description');
+    var targetElementPosition = targetElement.getBoundingClientRect();
+
+    if (targetElementPosition.top < window.innerHeight) {
+        // Change to more pleasent color
+        header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+    } else {
+        header.style.backgroundColor = 'rgba(28, 27, 33, 0.3)';
+    }
+});
+function scrollToSection(selector) {
+    event.preventDefault();
+    const target = document.querySelector(selector);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
+}
