@@ -11,32 +11,43 @@
     <title>Рок группа</title>
 </head>
 <body>
+    <script>
+        function scrollToSection(selector) {
+            event.preventDefault();
+            const target = document.querySelector(selector);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <div id="anchor-top"></div>
+
     <header class="header">
         <div class="wrapper">
             <div class="header-wrapper">
                 <div class="header-ava">
-                    <a href="#"><img src="./data/ava.png"></a>
+                    <a href="#" onclick="scrollToSection('#anchor-top')"><img src="./data/ava.png"></a>
                 </div>
-                <!-- <a href="#" class="ava"><img src="./data/ava.png"></a> -->
                 <nav>
                     <ul class="header-list">
                         <li class="header-item">
-                            <a href="#anchor-description" class="header-link">О НАС</a>
+                            <a href="#" onclick="scrollToSection('#anchor-description')" class="header-link">О НАС</a>
                         </li>
                         <li class="header-item">
-                            <a href="#anchor-about-us" class="header-link">НАШ СОСТАВ</a>
+                            <a href="#" onclick="scrollToSection('#anchor-about-us')" class="header-link">НАШ СОСТАВ</a>
                         </li>
                         <li class="header-item">
-                            <a href="#anchor-repertuar" class="header-link">РЕПЕРТУАР</a>
+                            <a href="#" onclick="scrollToSection('#anchor-repertuar')" class="header-link">РЕПЕРТУАР</a>
                         </li>
                         <li class="header-item">
-                            <a href="#anchor-video" class="header-link">ВИДЕО</a>
+                            <a href="#" onclick="scrollToSection('#anchor-video')" class="header-link">ВИДЕО</a>
                         </li>
                         <li class="header-item">
-                            <a href="#anchor-services" class="header-link">УСЛУГИ</a>
+                            <a href="#" onclick="scrollToSection('#anchor-services')" class="header-link">УСЛУГИ</a>
                         </li>
                         <li class="header-item">
-                            <a href="#anchor-contacts" class="header-link">СВЯЗАТЬСЯ С НАМИ</a>
+                            <a href="#" onclick="scrollToSection('#anchor-contacts')" class="header-link">СВЯЗАТЬСЯ С НАМИ</a>
                         </li>
                     </ul>
                 </nav>
