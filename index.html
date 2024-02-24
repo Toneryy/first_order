@@ -11,28 +11,7 @@
     <title>Рок группа</title>
 </head>
 <body>
-    <script>
-        function scrollToSection(selector) {
-            event.preventDefault();
-            const target = document.querySelector(selector);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('header');
-            var targetElement = document.getElementById('anchor-description');
-            var targetElementPosition = targetElement.getBoundingClientRect();
-
-            if (targetElementPosition.top < window.innerHeight) {
-                // Change to more pleasent color
-                header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
-            } else {
-                header.style.backgroundColor = 'rgba(28, 27, 33, 0.3)';
-            }
-        });
-    </script>
-
+    <script src="app.js"></script>
     <div id="anchor-top"></div>
 
     <header id="header" class="header">
@@ -210,14 +189,14 @@
                             <h3>Максим</h3>
                         </div>
                         <div class="s-l-text">
-                            <h4>Соло-гитара</h4>
+                            <h4 id="anchor-repertuar">Соло-гитара</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="anchor-repertuar" class="repertuar">
+        <section  class="repertuar">
             <div class="wrapper-repertuar">
                 <div class="repertuar-title">
                     <div class="description-photo">
@@ -602,7 +581,7 @@
                         </div>
     
                         <div class="call-yourself-phone">
-                            <a href="#">+7-995-222-22-22</a>
+                            <a href="tel:+79506644220">+7-950-664-4220</a>
                         </div>
 
                         <div class="call-yourself-photo">
@@ -626,34 +605,38 @@
 
     </main>
 
-    <footer>
-        <section class="any-questions">
-            <div class="wrapper-questions">
-                <div class="questions-title">
-                    <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
-                </div>
+    <section class="any-questions">
+        <div class="wrapper-questions">
 
-                <div class="questions-form">
-                    <div class="form-title">
-                        <h3>Оставьте заявку</h3>
-                    </div>
-                    <div class="contact-container">
-                        <div class="form-phone">
-                            <input type="phone" class="input-phone" placeholder="Номер телефона">
-                        </div>
-    
-                        <div class="send-form">
-                            <button class="contact-button" onclick="location.href='#'">СВЯЗАТЬСЯ С НАМИ</button>
-                        </div>
-                    </div>
+            <div class="questions-title"><h2>ОСТАЛИСЬ ВОПРОСЫ?</h2></div>
 
-                    <div class="checkbox">
+            <div class="questions-form">
+                <div class="form-title"><h3>Оставьте заявку</h3></div>
+                <br>
+                <div class="contact-container">
+                    
+                    <div class="form-phone">
+                        <input type="phone" class="input-phone" placeholder="&#128222; Номер телефона"></div>
 
+                    <div class="send-form">
+                        <button class="contact-button" onclick="location.href='#'">СВЯЗАТЬСЯ С НАМИ</button></div>
+
+                </div>   
+                <br><br>
+                <div class="agreement-checkbox-text">
+                    <input class="agreement-checkbox" type="checkbox" required/>
+
+                    <div class="agreement-text">
+                        <h4>Нажимая на кнопку, вы соглашаетесь с <a href="#"><u>условиями обработки персональных данных</u></a></h4>
                     </div>
                 </div>
             </div>
-        </section>
+            
 
+        </div>
+    </section>
+
+    <footer>
         <section class="info">
             <div class="info-container">
                 <div class="managers">
@@ -665,7 +648,7 @@
                         <div class="contact">
                             Евгений Андреевич
                             <br>
-                            +7-952-235-7852
+                            <a href="tel:+79522357852">+7-952-235-7852</a>
                         </div>
                     </div>
 
@@ -676,7 +659,7 @@
                         </div>
                         <div class="contact">
                             Полина Вадимовна
-                            +7-950-664-4220
+                            <a href="tel:+79506644220">+7-950-664-4220</a>
                         </div>
                     </div>
                 </div>
