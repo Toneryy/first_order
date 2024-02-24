@@ -89,7 +89,6 @@ body {
 .intro {
     height: 100vh;
     background: url(./data/back_photo.png) no-repeat center;
-    opacity: 0.7;
     background-size: cover;
     padding-top: 412px;
 }
@@ -97,10 +96,12 @@ body {
 
 .intro-title {
     max-width: 158px;
+    font-family: Poppins;
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
-    margin-bottom: 10px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 
@@ -473,6 +474,8 @@ body {
 
 .promo-video {
     position: relative;
+    outline: none;
+    border: none;
     padding-top: 130px;
     width: 1110px;
     height: 500px;
@@ -978,11 +981,33 @@ body {
     background-color: rgb(165, 17, 17);
 }
 
+
+.contact-button:hover, .contact-button:focus, .contact-button:active {
+    color: #fff;
+    background-color: #e21818;
+    border: 1px solid #fff;
+}
+
+
+.agreement-checkbox {
+    padding-right: 7px;
+}
+
+
 .agreement-checkbox-text {
+    display: flex;
     padding-left: 70px;
 }
 
+
 .agreement-text {
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(126, 134, 142);
+}
+
+
+.agreement-text a {
     color: rgb(126, 134, 142);
 }
 
@@ -1036,6 +1061,17 @@ body {
     width: 228px;
     height: 54px;
     text-align: left;
+}
+
+
+.contact a {
+    color: #fff;
+}
+
+
+.contact a:hover, .contact a:active, .contact a:focus {
+    transition: 0.3s;
+    color: #e21818;
 }
 
 
