@@ -882,22 +882,6 @@ body {
 }
 
 
-.review-photo {
-    width: 100%;
-    height: auto;
-}
-
-
-.review-photo-4 {
-    grid-column: 4/1;
-}
-
-
-.review-photo-5 {
-    grid-column: 1;
-}
-
-
 .reviews img {
     max-width: 100%;
     max-height: auto;
