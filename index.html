@@ -605,35 +605,38 @@
 
     </main>
 
+   
     <section class="any-questions">
-        <div class="wrapper-questions">
+        <form onsubmit="submitPhone(event)">
+            <div class="wrapper-questions">
 
-            <div class="questions-title"><h2>ОСТАЛИСЬ ВОПРОСЫ?</h2></div>
+                <div class="questions-title"><h2>ОСТАЛИСЬ ВОПРОСЫ?</h2></div>
 
-            <div class="questions-form">
-                <div class="form-title"><h3>Оставьте заявку</h3></div>
-                <br>
-                <div class="contact-container">
-                    
-                    <div class="form-phone">
-                        <input type="phone" class="input-phone" placeholder="&#128222; Номер телефона"></div>
+                <div class="questions-form">
+                    <div class="form-title"><h3>Оставьте заявку</h3></div>
+                    <br>
+                    <div class="contact-container">
+                        
+                        <div class="form-phone">
+                            <input id="phoneNumber" name="phoneNumber" type="phone" class="input-phone" placeholder="&#128222; Номер телефона">
+                        </div>
 
-                    <div class="send-form">
-                        <button class="contact-button" onclick="location.href='#'">СВЯЗАТЬСЯ С НАМИ</button></div>
+                        <div class="send-form">
+                            <input  type="submit" class="contact-button" value="СВЯЗАТЬСЯ С НАМИ">
+                        </div>
 
-                </div>   
-                <br><br>
-                <div class="agreement-checkbox-text">
-                    <input class="agreement-checkbox" type="checkbox" required/>
+                    </div>   
+                    <br><br>
+                    <div class="agreement-checkbox-text">
+                        <input id="agrcheckbox" class="agreement-checkbox" type="checkbox" required/>
 
-                    <div class="agreement-text">
-                        <h4>Нажимая на кнопку, вы соглашаетесь с <a href="#"><u>условиями обработки персональных данных</u></a></h4>
+                        <div class="agreement-text">
+                            <h4>Нажимая на кнопку, вы соглашаетесь с <a href=""><u>условиями обработки персональных данных</u></a></h4>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-
-        </div>
+        </form>
     </section>
 
     <footer>

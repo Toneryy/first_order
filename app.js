@@ -13,6 +13,10 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     })
 });
+
+/**
+ * Слушатель на скролл для активации background для header
+ */
 window.addEventListener('scroll', function() {
     var header = document.getElementById('header');
     var targetElement = document.getElementById('anchor-description');
@@ -25,10 +29,40 @@ window.addEventListener('scroll', function() {
         header.style.backgroundColor = 'rgba(28, 27, 33, 0.3)';
     }
 });
+
+/**
+ * Плавный переход до нужной секции через header
+ */
 function scrollToSection(selector) {
     event.preventDefault();
     const target = document.querySelector(selector);
     if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
     }
+}
+
+/**
+ * Форма для отправки телефона на почту
+ */
+function submitPhone(event) {
+    event.preventDefault();
+    let phoneNumber = document.getElementById('phoneNumber').value;
+    
+    // Придумать куда будет идти запрос (разобраться с API почты)
+    fetch('http://localhost:8080/api/mail', {
+        method: 'POST',
+        body: JSON.stringify({ phoneNumber: phoneNumber }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(document.getElementById('phoneNumber').value = '')
+    .then(document.getElementById('agrcheckbox').checked = false)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Ошибка:', error);
+    });
 }
