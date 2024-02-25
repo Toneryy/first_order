@@ -40,6 +40,33 @@ function scrollToSection(selector) {
         target.scrollIntoView({ behavior: 'smooth' });
     }
 }
+/**
+ * Validate phone number for pattern [+* *** *** ** **] and [* *** *** ** **]
+ * whether or not there are spaces it does not matter
+ */
+function validatePhone(number)
+{
+    if (number.length < 11 || number.length > 16) {
+        return false;
+    }
+
+    let i = 1;
+    if (number[0] != "+") {
+        i = 0;
+    } else {
+        i = 1;
+    }
+
+    while (i < number.length)
+    {
+        // Make sure it is a digit or a " ";
+        if (isNaN(number[i])) {
+            return false;
+        }
+        i++;
+    }
+    return true;
+}
 
 /**
  * Форма для отправки телефона на почту
@@ -49,26 +76,33 @@ function submitPhone(event) {
 
     let now = new Date().getTime();
     const then = localStorage.getItem("previous-request-time");
-    if (then == null || Number(then) + 5000 < now) {
-        localStorage.setItem("previous-request-time", now)
+
+    // milliseconds
+    const timeout = 5 * 60_000;
+
+    if (then == null || Number(then) + timeout < now) {
         let phoneNumber = document.getElementById('phoneNumber').value;
-        // Придумать куда будет идти запрос (разобраться с API почты)
-        fetch('http://localhost:8080/api/mail', {
-            method: 'POST',
-            body: JSON.stringify({ phoneNumber: phoneNumber }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(document.getElementById('phoneNumber').value = '')
-        .then(document.getElementById('agrcheckbox').checked = false)
-        .then(response => response.json())
-        .then(alert("Письмо успешно отправлено!"))
-        .catch(error => {
-            console.error('Ошибка:', error);
-        });;
+        if (validatePhone(phoneNumber) === true) {
+            localStorage.setItem("previous-request-time", now)
+            // Придумать куда будет идти запрос (разобраться с API почты)
+            fetch('http://localhost:8080/api/mail', {
+                method: 'POST',
+                body: JSON.stringify({ phoneNumber: phoneNumber }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(document.getElementById('phoneNumber').value = '')
+            .then(document.getElementById('agrcheckbox').checked = false)
+            .then(response => response.json())
+            .then(alert("Письмо успешно отправлено!"))
+            .catch(error => {
+                console.error('Ошибка:', error);
+            });;
+        } else {
+            alert("Некорректный номер телефона")
+        }
     } else {
         alert("Слишком много запросов. Подождите...")
     }
-
 }
