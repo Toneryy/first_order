@@ -702,13 +702,13 @@
 
     </main>
 
-   
+    
     <section class="any-questions">
         <form onsubmit="submitPhone(event)">
             <div class="wrapper-questions">
-
+                
                 <div class="questions-title"><h2>ОСТАЛИСЬ ВОПРОСЫ?</h2></div>
-
+                
                 <div class="questions-form">
                     <div class="form-title"><h3>Оставьте заявку</h3></div>
                     <br>
@@ -717,16 +717,16 @@
                         <div class="form-phone">
                             <input id="phoneNumber" name="phoneNumber" type="phone" class="input-phone" placeholder="&#128222; Номер телефона">
                         </div>
-
+                        
                         <div class="send-form">
                             <input  type="submit" class="contact-button" value="СВЯЗАТЬСЯ С НАМИ">
                         </div>
-
+                        
                     </div>   
                     <br><br>
                     <div class="agreement-checkbox-text">
                         <input id="agrcheckbox" class="agreement-checkbox" type="checkbox" required/>
-
+                        
                         <div class="agreement-text">
                             <h4>Нажимая на кнопку, вы соглашаетесь с <a href=""><u>условиями обработки персональных данных</u></a></h4>
                         </div>
@@ -736,6 +736,17 @@
         </form>
     </section>
 
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        const element1 = document.getElementById('phoneNumber');
+        const element2 = document.getElementById('requestphone');
+        const maskOptions = {
+        mask: '+{7} (000) 000-00-00'
+        };
+        const mask1 = IMask(element1, maskOptions);
+        const mask2 = IMask(element2, maskOptions);
+    </script>
+    
     <footer>
         <section class="info">
             <div class="info-container">
