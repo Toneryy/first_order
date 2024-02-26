@@ -153,7 +153,7 @@ function showPopup() {
     document.getElementById('toggle-popup').style.display = 'none';
 }
 function closePopup() {
-    scrollToSection('#anchor-contacts');
+    scrollToSection('#anchor-between');
     document.body.classList.toggle('scroll');
     document.getElementById('popup').style.display = 'none';
     document.getElementById('header').style.display = '';
