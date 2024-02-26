@@ -11,9 +11,6 @@ from .models import *
 def savePhoneEntity(request):
     if request.method == 'POST':
         data = json.loads(request.body)
-        print("\n")
-        print(data)
-        print("\n")
         obj = PhoneEntity.objects.create(
             phoneNumber=data['phoneNumber'], 
             status="awaits"
