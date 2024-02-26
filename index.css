@@ -343,12 +343,256 @@ body {
 
 .group-member {
     margin-right: 91px;
+    border-bottom-left-radius: 40px;
+    /* border-radius: 40px; */
+    position: relative;
+    cursor: pointer;
 }
 
 
 .group-member:last-child {
     margin-right: 0;
 }
+
+
+.group-member .mask {
+    /* border-radius: 40px; */
+    width: 204px;
+    height: 250px;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgb(28, 27, 33, 0.8);
+}
+
+
+.group-member img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.mask h2 {
+    color: rgb(237, 224, 224);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+.mask p {
+    font-style: italic;
+    color: rgb(237, 224, 224);
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.group-member-1 img {
+    transition: all 0.2s linear;
+    width: 204px;
+    height: 250px;
+}
+
+
+.group-member-1 .mask {
+    opacity: 0;
+    background-color: rgb(28, 27, 33, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.group-member-1 h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.group-member-1 p {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+
+/* .group-member-1:hover img {
+    transform: scale(1.1);
+} */
+
+
+.group-member-1:hover .mask {
+    opacity: 1;
+}
+
+
+.group-member-1:hover h2, .group-member-1:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.group-member-1:hover p {
+    transition-delay: 0.1s;
+}
+
+
+
+.group-member-2 img {
+    transition: all 0.2s linear;
+    width: 204px;
+    height: 250px;
+}
+
+
+.group-member-2 .mask {
+    opacity: 0;
+    background-color: rgb(28, 27, 33, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.group-member-2 h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.group-member-2 p {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+
+/* .group-member-1:hover img {
+    transform: scale(1.1);
+} */
+
+
+.group-member-2:hover .mask {
+    opacity: 1;
+}
+
+
+.group-member-2:hover h2, .group-member-2:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.group-member-2:hover p {
+    transition-delay: 0.1s;
+}
+
+
+
+
+.group-member-3 img {
+    transition: all 0.2s linear;
+    width: 204px;
+    height: 250px;
+}
+
+
+.group-member-3 .mask {
+    opacity: 0;
+    background-color: rgb(28, 27, 33, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.group-member-3 h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.group-member-3 p {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+
+/* .group-member-1:hover img {
+    transform: scale(1.1);
+} */
+
+
+.group-member-3:hover .mask {
+    opacity: 1;
+}
+
+
+.group-member-3:hover h2, .group-member-3:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.group-member-3:hover p {
+    transition-delay: 0.1s;
+}
+
+
+
+
+.group-member-4 img {
+    transition: all 0.2s linear;
+    width: 204px;
+    height: 250px;
+}
+
+
+.group-member-4 .mask {
+    opacity: 0;
+    background-color: rgb(28, 27, 33, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.group-member-4 h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.group-member-4 p {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+
+/* .group-member-4:hover img {
+    transform: scale(1.1);
+} */
+
+
+.group-member-4:hover .mask {
+    opacity: 1;
+}
+
+
+.group-member-4:hover h2, .group-member-4:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.group-member-4:hover p {
+    transition-delay: 0.1s;
+}
+
 
 
 .f-l-text {
@@ -1088,6 +1332,7 @@ body {
 /* INFO STYLES END */
 
 /* FORM REQUEST */
+
 .requestform-div {
     display: grid;
     align-items: center;
@@ -1100,6 +1345,7 @@ body {
     box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.17);
     background: rgb(255, 255, 255);
 }
+
 
 .requestform-content {
     display: grid;
