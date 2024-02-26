@@ -557,9 +557,27 @@
                         <h3>Мы с <strong><b>Вами</b></strong> свяжемся</h3>
                     </div>
                 </div>
-                <div class="order-call">
-                    <button class="order-button" onclick="location.href='#'">ЗАПИСАТЬСЯ</button>
-                </div>
+                <form id="myForm" onsubmit="submitForm(event)">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="req-name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="req-phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="location">Location:</label>
+                        <input type="text" id="req-location" name="location" required>
+                    </div>
+                    <div>
+                        <label for="date">Date:</label>
+                        <input type="date" id="req-date" name="date" required>
+                    </div>
+                    <div class="order-call">
+                        <button type="submit" class="order-button" onclick="submitForm(event)">ЗАПИСАТЬСЯ</button>
+                    </div>
+                </form>
             </div>
         </section>
 

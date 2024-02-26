@@ -84,8 +84,7 @@ function submitPhone(event) {
         let phoneNumber = document.getElementById('phoneNumber').value;
         if (validatePhone(phoneNumber) === true) {
             localStorage.setItem("previous-request-time", now)
-            // Придумать куда будет идти запрос (разобраться с API почты)
-            fetch('http://localhost:8080/api/mail', {
+            fetch('http://localhost:8000/api/phone', {
                 method: 'POST',
                 body: JSON.stringify({ phoneNumber: phoneNumber }),
                 headers: {
@@ -94,6 +93,46 @@ function submitPhone(event) {
             })
             .then(document.getElementById('phoneNumber').value = '')
             .then(document.getElementById('agrcheckbox').checked = false)
+            .then(response => response.json())
+            .then(alert("Письмо успешно отправлено!"))
+            .catch(error => {
+                console.error('Ошибка:', error);
+            });;
+        } else {
+            alert("Некорректный номер телефона")
+        }
+    } else {
+        alert("Слишком много запросов. Подождите...")
+    }
+}
+
+function submitForm(event) {
+    event.preventDefault();
+
+    let now = new Date().getTime();
+    const then = localStorage.getItem("previous-full-request-time");
+
+    // milliseconds
+    const timeout = 5 * 60_000;
+
+    if (then == null || Number(then) + timeout < now) {
+        let nm = document.getElementById('req-name').value;
+        let phone = document.getElementById('req-phone').value;
+        let loc = document.getElementById('req-location').value;
+        let dat = document.getElementById('req-value').value;
+        if (validatePhone(phone) === true) {
+            localStorage.setItem("previous-full-request-time", now)
+            fetch('http://localhost:8000/api/request', {
+                method: 'POST',
+                body: JSON.stringify({name: nm, phoneNumber: phone, location: loc, date: dat}),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(document.getElementById('req-name').value = '')
+            .then(document.getElementById('req-phone').value = '')
+            .then(document.getElementById('req-location').value = '')
+            .then(document.getElementById('req-value').value = '')
             .then(response => response.json())
             .then(alert("Письмо успешно отправлено!"))
             .catch(error => {
