@@ -41,12 +41,12 @@ function scrollToSection(selector) {
     }
 }
 /**
- * Validate phone number for pattern [+* *** *** ** **] and [* *** *** ** **]
+ * Validate phone number for pattern '+7 (000) 000-00-00'
  * whether or not there are spaces it does not matter
  */
 function validatePhone(number)
 {
-    if (number.length < 11 || number.length > 16) {
+    if (number.length < 18) {
         return false;
     }
 
@@ -60,7 +60,7 @@ function validatePhone(number)
     while (i < number.length)
     {
         // Make sure it is a digit or a " ";
-        if (isNaN(number[i])) {
+        if (isNaN(number[i]) && number[i] != ")" && number[i] != "(" && number[i] != "-") {
             return false;
         }
         i++;
