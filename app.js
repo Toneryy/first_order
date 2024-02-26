@@ -137,10 +137,36 @@ function submitForm() {
             .catch(error => {
                 console.error('Ошибка:', error);
             });;
+            closePopup();
         } else {
             alert("Некорректный номер телефона")
         }
     } else {
         alert("Слишком много запросов. Подождите...")
+    }
+}
+function showPopup() {
+    scrollToSection('#anchor-contacts');
+    document.body.classList.toggle('no-scroll');
+    document.getElementById("popup").style.display = 'grid';
+    document.getElementById('header').style.display = 'none';
+    document.getElementById('toggle-popup').style.display = 'none';
+}
+function closePopup() {
+    scrollToSection('#anchor-contacts');
+    document.body.classList.toggle('scroll');
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('header').style.display = '';
+    document.getElementById('toggle-popup').style.display = '';
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('#toggle-popup')) {
+        var popupMenu = document.getElementById('popup');
+        if (!document.getElementById("requestform-div").contains(event.target)) {
+            if (popupMenu.style.display === 'grid') {
+                closePopup();
+            }
+        }
     }
 }
