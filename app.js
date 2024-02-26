@@ -106,33 +106,32 @@ function submitPhone(event) {
     }
 }
 
-function submitForm(event) {
-    event.preventDefault();
+function submitForm() {
+    event.preventDefault(); 
 
     let now = new Date().getTime();
     const then = localStorage.getItem("previous-full-request-time");
 
     // milliseconds
     const timeout = 5 * 60_000;
-
     if (then == null || Number(then) + timeout < now) {
-        let nm = document.getElementById('req-name').value;
-        let phone = document.getElementById('req-phone').value;
-        let loc = document.getElementById('req-location').value;
-        let dat = document.getElementById('req-value').value;
-        if (validatePhone(phone) === true) {
+        var name = document.getElementById('requestname').value;
+        var phone = document.getElementById('requestphone').value;
+        var location = document.getElementById('requestlocation').value;
+        var date = document.getElementById('requestdate').value;
+        if (validatePhone(phone) == true) {
             localStorage.setItem("previous-full-request-time", now)
             fetch('http://localhost:8000/api/request', {
                 method: 'POST',
-                body: JSON.stringify({name: nm, phoneNumber: phone, location: loc, date: dat}),
+                body: JSON.stringify({name: name, phoneNumber: phone, location: location, date: date}),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
-            .then(document.getElementById('req-name').value = '')
-            .then(document.getElementById('req-phone').value = '')
-            .then(document.getElementById('req-location').value = '')
-            .then(document.getElementById('req-value').value = '')
+            .then(document.getElementById('requestname').value = '')
+            .then(document.getElementById('requestphone').value = '')
+            .then(document.getElementById('requestlocation').value = '')
+            .then(document.getElementById('requestdate').value = '')
             .then(response => response.json())
             .then(alert("Письмо успешно отправлено!"))
             .catch(error => {

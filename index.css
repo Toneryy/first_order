@@ -1086,3 +1086,65 @@ body {
 
 
 /* INFO STYLES END */
+
+/* FORM REQUEST */
+
+.requestform-div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    width: 458px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.17);
+    background: rgb(255, 255, 255);
+}
+
+.requestform-content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#requestform-submit {
+    background-color: rgb(165, 17, 17);
+    color: white;
+    border: 0px;
+}
+
+
+.requestname::before {
+    content: "Имя";
+    color: gray;
+    pointer-events: none;
+}
+
+.requestform-element {
+    display: inline-block;
+    width: 273px;
+    height: 60px;
+    border: 0px;
+    border-radius: 10px;
+    background: rgb(249, 221, 221);
+    color: black;
+}
+
+.requestform-content-name {
+    padding-top: 6px;
+    padding-left: 10px;
+    color: rgb(126, 134, 142);
+}
+
+.requestform-content-field {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.requestform-content-field-input {
+    width: 250px;
+    background-color: rgb(249, 221, 221);
+    color: black;
+    border: rgb(249, 221, 221);
+}
