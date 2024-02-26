@@ -547,7 +547,7 @@
         <section id="anchor-contacts" class="want-work">
             <div class="wrapper-call">
                 <div class="want-work-title">
-                    <h2>ХОТИТЕ С НАМИ РАБОТАТЬ?</h2>
+                    <h2 id="anchor-for-popup">ХОТИТЕ С НАМИ РАБОТАТЬ?</h2>
                 </div>
                 <div class="want-work-subtitle">
                     <div class="first-line-sub">
@@ -557,14 +557,12 @@
                         <h3>Мы с <strong><b>Вами</b></strong> свяжемся</h3>
                     </div>
                 </div>
-                <div class="order-call">
-                    <button type="submit" class="order-button">ЗАПИСАТЬСЯ</button>
-                </div>  
-                <div class="popup">
+                 
+                <div id="popup">
                     <form id="myForm" onsubmit="submitForm(); return false;">
                         <div class="requestform-content">
-                            <div class="requestform-div">
-    
+                            <div id="requestform-div" class="requestform-div">
+
                                 <div class="requestform-element">
                                     <div class="requestform-content-name">
                                         <h5>Имя</h5>
@@ -607,6 +605,9 @@
                         
                     </form>
                 </div>
+                <div class="order-call">
+                    <button id="toggle-popup" onclick="showPopup()" class="order-button">ЗАПИСАТЬСЯ</button>
+                </div> 
 
             </div>
         </section>

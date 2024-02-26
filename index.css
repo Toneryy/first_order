@@ -680,6 +680,7 @@ body {
 
 
 .wrapper-call {
+    opacity: 1;
     max-width: 1110px;
     margin: 0 auto;
     padding-top: 219px;
@@ -1088,6 +1089,23 @@ body {
 /* INFO STYLES END */
 
 /* FORM REQUEST */
+
+#popup {
+    display: none;
+    z-index: 1000;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+.scroll {
+    overflow: auto;
+}
+
+.toggle-popup {
+    display: block;
+}
+
 .requestform-div {
     display: grid;
     align-items: center;
