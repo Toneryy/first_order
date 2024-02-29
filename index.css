@@ -5,9 +5,9 @@ html {
 
 body {
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     color: #fff;
     background: linear-gradient(#FFFFFF, 0%, #1C1B21) no-repeat center;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 
 .wrapper {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 9;
-    height: 100px;
+    height: 6.25rem;
     background-color:rgba(28, 27, 33, 0.3);
     transition: background-color 0.3s;
 }
@@ -44,19 +44,19 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 21px;
+    padding-top: 1.3125rem;
 }
 
 
 .header-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 19px;
+    padding-bottom: 1.1875rem;
 }
 
 
 .header-item {
-    margin-right: 54px;
+    margin-right: 3.375rem;
 }
 
 
@@ -67,7 +67,7 @@ body {
 
 .header-link {
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
@@ -90,48 +90,48 @@ body {
     height: 100vh;
     background: url(./data/back_photo.png) no-repeat center;
     background-size: cover;
-    padding-top: 412px;
+    padding-top: 25.75rem;
 }
 
 
 .intro-title {
-    max-width: 158px;
+    max-width: 9.875rem;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 4.5rem;
     letter-spacing: 0%;
     text-align: left;
 }
 
 
 .intro-subtitle {
-    max-width: 530px;
-    font-size: 36px;
+    max-width: 33.125rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    line-height: 54px;
-    line-height: 54px;
+    line-height: 3.375rem;
+    line-height: 3.375rem;
 }
 
 
 /* PROMO-PHOTOS STYLES START */
 .promo-photos-wrap {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
     position: relative;
 }
 
 
 .promo-photos {
-    gap: 30px;
+    gap: 1.875rem;
     display: flex;
     text-align: center;
 }
 
 
 .promo-photo-container {
-    width: 350px;
-    height: 300px;
+    width: 21.875rem;
+    height: 18.75rem;
     position: relative;
     background: url('./data/274px-Victor_Tsoi_1986_cropped.jpg') no-repeat center;
     background-size: cover;
@@ -143,8 +143,8 @@ body {
 
 
 .container-cover {
-    width: 350px;
-    height: 60px;
+    width: 21.875rem;
+    height: 3.75rem;
     padding: 1em;
     position: absolute;
     bottom: 0;
@@ -157,9 +157,9 @@ body {
 
 .promo-title {
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -167,13 +167,13 @@ body {
 
 .left-arrow {
     text-align: left;
-    margin-top: 120px;
+    margin-top: 7.5rem;
 }
 
 
 .right-arrow {
     text-align: right;
-    margin-top: 120px;
+    margin-top: 7.5rem;
 }
 
 
@@ -184,9 +184,9 @@ body {
 
 
 .wrapper-full {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
-    padding-top: 129px;
+    padding-top: 8.0625rem;
 }
 
 
@@ -200,10 +200,10 @@ body {
 .description-photo {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 30px;
-    margin-top: 23px;
-    width: 64px;
-    height: 31px;
+    margin-right: 1.875rem;
+    margin-top: 1.4375rem;
+    width: 4rem;
+    height: 1.9375rem;
 }
 
 
@@ -211,40 +211,41 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 4.5rem;
     letter-spacing: 0%;
 }
 
 
 .description-bio-text {
     padding-top: 60px;
-    min-width: 540px;
-    height: 120px;
+    width: 33.75rem;
+    height: 7.5rem;
     opacity: 0.7;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     letter-spacing: 0%;
+    
 }
 
 
 .desc-photos {
     display: flex;
-    width: 445px;
-    height: 466px;
+    width: 27.8125rem;
+    height: 29.125rem;
     position: relative;
     right: 0;
     top: 0;
-    margin-top: -200px;
+    margin-top: -12.5rem;
 }
 
 
 .front-desc-photo img {
-    width: 350px;
-    height: 400px;
+    width: 21.875rem;
+    height: 25rem;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
 }
@@ -253,14 +254,14 @@ body {
 .front-desc-photo {
     display: inline-block;
     position: absolute;
-    padding-left: 665px;
+    padding-left: 41.5625rem;
     z-index: 2;
 }
 
 
 .back-desc-photo img {
-    width: 350px;
-    height: 400px;
+    width: 21.875rem;
+    height: 25rem;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
 }
@@ -269,10 +270,10 @@ body {
 .back-desc-photo {
     display: inline-block;
     position: absolute;
-    width: 350px;
-    height: 400px;
-    margin-left: 760px;
-    padding-top: 57px;
+    width: 21.875rem;
+    height: 25rem;
+    margin-left: 47.5rem;
+    padding-top: 3.5625rem;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
     opacity: 0.3;
@@ -281,7 +282,7 @@ body {
 
 
 .desc-information {
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
 }
 
 
@@ -292,29 +293,30 @@ body {
 
 .info-item-2 {
     position: absolute;
-    margin-left: 300px;
+    margin-left: 18.75rem;
 }
 
 
 .desc-information img {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 
 .info-items-second-line {
     display: flex;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 
 
 .info-item {
     display: flex;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 1.6875rem;
     letter-spacing: 0%;
     text-align: left;
+    text-transform: uppercase;
 }
 
 
@@ -327,23 +329,23 @@ body {
 .group-title {
     display: flex;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 4.5rem;
     letter-spacing: 0%;
     text-align: left;
 }
 
 
 .group-members {
-    padding-top: 81px;
+    padding-top: 5.0625rem;
     display: flex;
 }
 
 
 .group-member {
-    margin-right: 91px;
-    border-bottom-left-radius: 40px;
+    margin-right: 5.6875rem;
+    border-bottom-left-radius: 2.5rem;
     /* border-radius: 40px; */
     position: relative;
     cursor: pointer;
@@ -357,8 +359,8 @@ body {
 
 .group-member .mask {
     /* border-radius: 40px; */
-    width: 204px;
-    height: 250px;
+    width: 12.75rem;
+    height: 15.625rem;
     border: none;
     position: absolute;
     overflow: hidden;
@@ -378,25 +380,25 @@ body {
 .mask h2 {
     color: rgb(237, 224, 224);
     text-align: center;
-    padding-top: 20px;
-    font-size: 14px;
+    padding-top: 1.25rem;
+    font-size: 0.875rem;
 }
 
 
 .mask p {
     font-style: italic;
     color: rgb(237, 224, 224);
-    line-height: 12px;
-    font-size: 12px;
+    line-height: 0.75rem;
+    font-size: 0.75rem;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 
 .group-member-1 img {
     transition: all 0.2s linear;
-    width: 204px;
-    height: 250px;
+    width: 12.75rem;
+    height: 15.625rem;
 }
 
 
@@ -408,14 +410,14 @@ body {
 
 
 .group-member-1 h2 {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
 
 
 .group-member-1 p {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s linear;
 }
@@ -445,8 +447,8 @@ body {
 
 .group-member-2 img {
     transition: all 0.2s linear;
-    width: 204px;
-    height: 250px;
+    width: 12.75rem;
+    height: 15.625rem;
 }
 
 
@@ -458,14 +460,14 @@ body {
 
 
 .group-member-2 h2 {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
 
 
 .group-member-2 p {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s linear;
 }
@@ -509,14 +511,14 @@ body {
 
 
 .group-member-3 h2 {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
 
 
 .group-member-3 p {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s linear;
 }
@@ -560,14 +562,14 @@ body {
 
 
 .group-member-4 h2 {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
 
 
 .group-member-4 p {
-    transform: translateY(-100px);
+    transform: translateY(-6.25rem);
     opacity: 0;
     transition: all 0.2s linear;
 }
@@ -596,9 +598,9 @@ body {
 
 
 .f-l-text {
-    padding-top: 16px;
+    padding-top: 1rem;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0%;
@@ -609,7 +611,7 @@ body {
 .s-l-text {
     padding-top: 11px;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 160%;
     letter-spacing: 0%;
@@ -627,19 +629,19 @@ body {
 
 
 .wrapper-repertuar {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
-    padding-top: 64px;
+    padding-top: 4rem;
 }
 
 
 .repertuar-title {
-    padding-left: 570px;
+    padding-left: 35.625rem;
     display: flex;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 4.5rem;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -653,39 +655,39 @@ body {
 
 .circle {
     display: inline-block;
-    margin-right: 43px;
+    margin-right: 2.6875rem;
 }
 
 
 .square {
     display: table-cell;
     overflow-y: scroll;
-    margin-top: 80px;
-    width: 502px;
-    height: 313px;
-    border-radius: 30px 30px 30px 0px;
+    margin-top: 5rem;
+    width: 31.3125rem;
+    height: 19.5625rem;
+    border-radius: 1.875rem 1.875rem 30px 0px;
     background: rgb(47, 47, 47) no-repeat center;
     background-size: 100vh;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 1.6875rem;
     letter-spacing: 0%;
     text-align: left;
 }
 
 
 .music-items {
-    padding-left: 17px;
+    padding-left: 1.0625rem;
     padding-top: 23px;
 }
 
 
 .red-text-songs {
-    padding: 0 16px 0 16px;
+    padding: 0 1rem 0 1rem;
     color: rgb(165, 17, 17);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 1.6875rem;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -699,7 +701,7 @@ body {
 
 
 .wrapper-promo {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
     padding-top: 166px;
 }
@@ -708,7 +710,7 @@ body {
 .promo-video-title {
     display: flex;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -720,8 +722,8 @@ body {
     position: relative;
     outline: none;
     border: none;
-    padding-top: 130px;
-    width: 1110px;
+    padding-top: 8.125rem;
+    width: 69.375rem;
     height: 500px;
     /* background: url('./data/play-icon.png') no-repeat center;
     background-size: 20%; */
@@ -757,16 +759,16 @@ body {
 
 
 .wrapper-stages {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 8.125rem;
 }
 
 
 .stages-title {
     display: flex;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -775,7 +777,7 @@ body {
 
 
 .advantages {
-    padding-top: 130px;
+    padding-top: 8.125rem;
 }
 
 
@@ -834,21 +836,21 @@ body {
 /* SERVICES STYLES START */
 
 #anchor-between {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 
 .wrapper-services {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
-    padding-top: 130px;
-    padding-bottom: 100px;
+    padding-top: 8.125rem;
+    padding-bottom: 6.25rem;
 }
 
 
 .services-title {
     display: flex;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -857,7 +859,7 @@ body {
 
 
 .services-squares {
-    padding-top: 130px;
+    padding-top: 8.125rem;
     display: flex;
 }
 
@@ -929,7 +931,7 @@ body {
 
 .wrapper-call {
     opacity: 1;
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
    
 }
@@ -937,7 +939,7 @@ body {
 
 .want-work-title {
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -1022,16 +1024,16 @@ body {
 
 
 .wrapper-call-yourself {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 8.125rem;
 }
 
 
 .call-yourself-title {
     padding-bottom: 72px;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -1040,7 +1042,7 @@ body {
 
 
 .call-yourself-back-photo {
-    width: 1110px;
+    width: 69.375rem;
     height: 313px;
     padding-top: 88px;
     background: url('./data/back-call-photo.png') no-repeat center;
@@ -1107,7 +1109,7 @@ body {
 
 
 .wrapper-reviews {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
     padding-top: 213px;
 }
@@ -1115,7 +1117,7 @@ body {
 
 .reviews-title {
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -1124,7 +1126,7 @@ body {
 
 
 .reviews-photos {
-    padding-top: 130px;
+    padding-top: 8.125rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 34px 29px;
@@ -1134,7 +1136,7 @@ body {
 .reviews img {
     max-width: 100%;
     max-height: auto;
-    width: 350px;
+    width: 21.875rem;
     height: 313px;
 
 }
@@ -1149,15 +1151,15 @@ body {
 
 
 .wrapper-questions {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 8.125rem;
 }
 
 
 .questions-title {
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0%;
@@ -1194,7 +1196,7 @@ body {
 }
 
 .input-phone {
-    width: 300px;
+    width: 18.75rem;
     height: 80px;
     border-radius: 8px;
     margin-right: 40px;
@@ -1283,7 +1285,7 @@ body {
 
 
 .manager {
-    width: 200px;
+    width: 12.5rem;
     height: 104px;
     margin-right: 30px;
     text-align: right;
@@ -1389,7 +1391,7 @@ body {
 
 .requestform-element {
     display: inline-block;
-    width: 300px;
+    width: 18.75rem;
     height: 60px;
     border: 0px;
     border-radius: 10px;
