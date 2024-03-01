@@ -39,6 +39,15 @@ function scrollToSection(selector) {
     if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
     }
+    let nav = document.getElementById("nav"); 
+    let button = document.getElementById("nav-button-image")
+    if (nav.classList.contains('open')) {
+        document.getElementById("nav").classList.remove("open");
+        button.src = "./data/catalog-mb.png";
+    } else {
+        document.getElementById("nav").classList.add("open");
+        button.src = "./data/nav-close.svg";
+    }
 }
 /**
  * Validate phone number for pattern '+7 (000) 000-00-00'
@@ -170,3 +179,4 @@ window.onclick = function(event) {
         }
     }
 }
+

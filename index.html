@@ -13,7 +13,6 @@
 </head>
 <body>
     <script src="app.js"></script>
-    <script src="nav.js"></script>
     <div id="anchor-top"></div>
 
     <header id="header" class="header">
@@ -43,7 +42,20 @@
                             <a href="#" onclick="scrollToSection('#anchor-between')" class="header-link">СВЯЗАТЬСЯ С НАМИ</a>
                         </li>
                     </ul>
-                    <button id="nav-buttn" class="nav-button"><img id="nav-button-image" src="./data/catalog-mb.png" alt="catalog"></button>
+                    <button id="nav-button" class="nav-button"><img id="nav-button-image" src="./data/catalog-mb.png" alt="catalog"></button>
+                    <script>
+                        document.getElementById("nav-button").addEventListener("click", (e) => {
+                            let nav = document.getElementById("nav"); 
+                            let button = document.getElementById("nav-button-image")
+                            if (nav.classList.contains('open')) {
+                                document.getElementById("nav").classList.remove("open");
+                                button.src = "./data/catalog-mb.png";
+                            } else {
+                                document.getElementById("nav").classList.add("open");
+                                button.src = "./data/nav-close.svg";
+                            }
+                        })
+                    </script>
                 </nav>
             </div>
         </div>
