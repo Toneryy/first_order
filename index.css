@@ -39,6 +39,14 @@ body {
 }
 
 
+.nav-button {
+    display: none;
+    background: none;
+    border: none;
+    
+}
+
+
 .header-wrapper {
     display: flex;
     flex-wrap: wrap;

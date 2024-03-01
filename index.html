@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="media.css">
     <title>Рок группа</title>
 </head>
 <body>
     <script src="app.js"></script>
+    <script src="nav.js"></script>
     <div id="anchor-top"></div>
 
     <header id="header" class="header">
@@ -20,7 +22,7 @@
                 <div class="header-ava">
                     <a href="#" onclick="scrollToSection('#anchor-top')"><img src="./data/ava.png"></a>
                 </div>
-                <nav>
+                <nav id="nav" class="nav">
                     <ul class="header-list">
                         <li class="header-item">
                             <a href="#" onclick="scrollToSection('#anchor-description')" class="header-link">О НАС</a>
@@ -41,6 +43,7 @@
                             <a href="#" onclick="scrollToSection('#anchor-between')" class="header-link">СВЯЗАТЬСЯ С НАМИ</a>
                         </li>
                     </ul>
+                    <button id="nav-buttn" class="nav-button"><img id="nav-button-image" src="./data/catalog-mb.png" alt="catalog"></button>
                 </nav>
             </div>
         </div>

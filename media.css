@@ -1,5 +1,40 @@
 /* ADAPTIVE START */
+@media (max-width: 76.875rem) {
+    .nav-button {
+        display: block;
+        
+    }
 
+    .header-list {
+        display: none;
+    }
+
+
+    .nav.open .header-list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #1C1B21;
+        
+        z-index: 1;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+
+    .nav-button {
+        position: fixed;
+        z-index: 9;
+        top: 46px;
+        right: 30px;
+    }
+}
 
 
 
