@@ -7,7 +7,6 @@ navBtn.onclick = () => {
         navBtnImg.src = "./data/nav-close.svg";
     } else {
         navBtnImg.src = "./data/catalog-mb.png";
-        console.log("Пиздец")
     }
 }
 
