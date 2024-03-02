@@ -48,10 +48,10 @@
                             let nav = document.getElementById("nav"); 
                             let button = document.getElementById("nav-button-image")
                             if (nav.classList.contains('open')) {
-                                document.getElementById("nav").classList.remove("open");
+                                nav.classList.remove("open");
                                 button.src = "./data/catalog-mb.png";
                             } else {
-                                document.getElementById("nav").classList.add("open");
+                                nav.classList.add("open");
                                 button.src = "./data/nav-close.svg";
                             }
                         })
