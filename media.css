@@ -39,9 +39,25 @@
 
 
 @media (max-width: 700px) {
-    
+    .intro-title {
+        font-size: 34px;
+        line-height: 3.19rem;
+    }
+
+
+    .intro-subtitle {
+        padding-top: 21px;
+        font-size: 34px;
+        line-height: 3.19rem;
+    }
 }
 
+
+/* @media screen and (max-width: 375px) {
+    .wrapper, .wrapper-call, .wrapper-call-yourself, .wrapper-full, .wrapper-promo, .wrapper-questions {
+        max-width: 315px;
+    }
+} */
 
 
 /* ADAPTIVE END */

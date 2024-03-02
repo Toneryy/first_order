@@ -10,12 +10,12 @@ body {
     line-height: 1.5rem;
     color: #fff;
     background: linear-gradient(#FFFFFF, 0%, #1C1B21) no-repeat center;
-    background-size: cover;
+    background-size: 100%;
 }
 
 
 .wrapper {
-    max-width: clamp(1.875rem, -14.508rem + 69.9vw, 69.375rem);
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 9;
-    height: clamp(4.31rem, 3.839rem + 2.01vw, 6.25rem);
+    height: 6.25rem;
     background-color:rgba(28, 27, 33, 0.3);
     transition: background-color 0.3s;
 }
@@ -54,7 +54,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: clamp(1.313rem, 1.176rem + 0.58vw, 1.875rem);
+    padding-top: 1.875rem;
 }
 
 
@@ -126,7 +126,7 @@ body {
 
 /* PROMO-PHOTOS STYLES START */
 .promo-photos-wrap {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     position: relative;
 }
@@ -194,7 +194,7 @@ body {
 
 
 .wrapper-full {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 8.0625rem;
 }
@@ -254,8 +254,8 @@ body {
 
 
 .front-desc-photo img {
-    width: 21.875rem;
-    height: 25rem;
+    width: clamp(6.5rem, 2.768rem + 15.92vw, 21.875rem);
+    height: clamp(8.13rem, 4.035rem + 17.47vw, 25rem);
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
 }
@@ -270,8 +270,8 @@ body {
 
 
 .back-desc-photo img {
-    width: 21.875rem;
-    height: 25rem;
+    width: clamp(6.5rem, 2.768rem + 15.92vw, 21.875rem);
+    height: clamp(8.13rem, 4.035rem + 17.47vw, 25rem);
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
 }
@@ -282,7 +282,7 @@ body {
     position: absolute;
     width: 21.875rem;
     height: 25rem;
-    margin-left: 47.5rem;
+    margin-left: clamp(13.188rem, 4.859rem + 35.53vw, 47.5rem);
     padding-top: 3.5625rem;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
@@ -639,7 +639,7 @@ body {
 
 
 .wrapper-repertuar {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 4rem;
 }
@@ -711,7 +711,7 @@ body {
 
 
 .wrapper-promo {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 10.375rem;
 }
@@ -769,7 +769,7 @@ body {
 
 
 .wrapper-stages {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 8.125rem;
 }
@@ -850,7 +850,7 @@ body {
 }
 
 .wrapper-services {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 8.125rem;
     padding-bottom: 6.25rem;
@@ -941,7 +941,7 @@ body {
 
 .wrapper-call {
     opacity: 1;
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
    
 }
@@ -1034,7 +1034,7 @@ body {
 
 
 .wrapper-call-yourself {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 8.125rem;
 }
@@ -1119,7 +1119,7 @@ body {
 
 
 .wrapper-reviews {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 13.3125rem;
 }
@@ -1161,7 +1161,7 @@ body {
 
 
 .wrapper-questions {
-    max-width: 69.375rem;
+    max-width: clamp(19.688rem, 7.627rem + 51.46vw, 69.375rem);
     margin: 0 auto;
     padding-top: 8.125rem;
 }
