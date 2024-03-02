@@ -15,7 +15,7 @@ body {
 
 
 .wrapper {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
 }
 
@@ -23,8 +23,8 @@ body {
 
 
 .header-ava {
-    width: clamp(30.08px, 21.84px + 2.2vw, 64.0px);
-    height: clamp(30.08px, 21.84px + 2.2vw, 64.0px);
+    width: 64px;
+    height: 64px;
     opacity: 0.5;
 }
 
@@ -97,7 +97,8 @@ body {
 /* INTRO STYLES START */
 
 .intro {
-    height: 100vh;
+    height: 1000px;
+    width: 100%;
     background: url(./data/back_photo.png) no-repeat center;
     background-size: cover;
     padding-top: 412.0px;
@@ -120,13 +121,12 @@ body {
     font-size: 36.0px;
     font-weight: 700;
     line-height: 54.0px;
-    line-height: 54.0px;
 }
 
 
 /* PROMO-PHOTOS STYLES START */
 .promo-photos-wrap {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     position: relative;
 }
@@ -194,7 +194,7 @@ body {
 
 
 .wrapper-full {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 129.0px;
 }
@@ -221,7 +221,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: Poppins;
-    font-size: clamp(18.08px, 10.816px + 1.94vw, 48.0px);
+    font-size: 48px;
     font-weight: 700;
     line-height: 72.0px;
     letter-spacing: 0%;
@@ -244,7 +244,7 @@ body {
 
 .desc-photos {
     display: flex;
-    width: clamp(133.008px, 57.28px + 20.19vw, 444.992px)80.0px;
+    width: 445px;
     height: 466.0px;
     position: relative;
     right: 0;
@@ -254,8 +254,8 @@ body {
 
 
 .front-desc-photo img {
-    width: clamp(104.0px, 44.288px + 15.92vw, 350.0px);
-    height: clamp(130.08px, 64.56px + 17.47vw, 400.0px);
+    width: 350px;
+    height: 400px;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
 }
@@ -270,8 +270,8 @@ body {
 
 
 .back-desc-photo img {
-    width: clamp(104.0px, 44.288px + 15.92vw, 350.0px);
-    height: clamp(130.08px, 64.56px + 17.47vw, 400.0px);
+    width: 350px;
+    height: 400px;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
 }
@@ -282,7 +282,7 @@ body {
     position: absolute;
     width: 350.0px;
     height: 400.0px;
-    margin-left: clamp(211.008px, 77.744px + 35.53vw, 760.0px);
+    margin-left: 760px;
     padding-top: 57.0px;
     border-bottom-right-radius: 16pt;
     border-top-left-radius: 16pt;
@@ -639,7 +639,7 @@ body {
 
 
 .wrapper-repertuar {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 64.0px;
 }
@@ -711,7 +711,7 @@ body {
 
 
 .wrapper-promo {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 166.0px;
 }
@@ -769,7 +769,7 @@ body {
 
 
 .wrapper-stages {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 130.0px;
 }
@@ -850,7 +850,7 @@ body {
 }
 
 .wrapper-services {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 130.0px;
     padding-bottom: 100.0px;
@@ -941,7 +941,7 @@ body {
 
 .wrapper-call {
     opacity: 1;
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
    
 }
@@ -1034,7 +1034,7 @@ body {
 
 
 .wrapper-call-yourself {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 130.0px;
 }
@@ -1119,7 +1119,7 @@ body {
 
 
 .wrapper-reviews {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 213.0px;
 }
@@ -1161,7 +1161,7 @@ body {
 
 
 .wrapper-questions {
-    max-width: clamp(315.008px, 122.032px + 51.46vw, 1110.0px);
+    max-width: 1110.0px;
     margin: 0 auto;
     padding-top: 130.0px;
 }

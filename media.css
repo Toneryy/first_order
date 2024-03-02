@@ -31,8 +31,13 @@
     .nav-button {
         position: fixed;
         z-index: 9;
-        top: 46px;
+        top: 45px;
         right: 30px;
+    }
+
+    .nav-button img {
+        width: 36px;
+        height: 24px;
     }
 }
 
@@ -52,6 +57,75 @@
     }
 }
 
+
+
+@media screen and (max-width: 1385px) {
+    
+}
+
+
+@media (min-width: 375px) and (max-width:479px){
+    .header-ava img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header {
+        height: 63.0px;
+    }
+
+    .nav-button {
+        top: 37px;
+    }
+
+    .nav-button img {
+        width: 24px;
+        height: 16px;
+    }
+
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        
+
+    }
+
+    .intro {
+        height: 383px;
+        width: 100%;
+        background: url('./data/intro-mobile.png') no-repeat center;
+        background-size: cover;
+    }
+
+    .intro-title {
+        width: 112px;
+        height: 51px;
+        font-size: 34px;
+        line-height: 51px
+    }
+
+
+    .intro-subtitle {
+        padding-top: 21px;
+        font-size: 34px;
+        line-height: 51px;
+        width: 254px;
+        height: 102px;
+    }
+
+
+    footer {
+        display: none;
+    }
+
+    section {
+        display: none;
+    }
+
+    section:first-child {
+        display: block;
+    }
+}
 
 /* @media screen and (max-width: 375px) {
     .wrapper, .wrapper-call, .wrapper-call-yourself, .wrapper-full, .wrapper-promo, .wrapper-questions {
