@@ -244,7 +244,7 @@ body {
 
 .desc-photos {
     display: flex;
-    width: 27.8125rem;
+    width: clamp(8.313rem, 3.58rem + 20.19vw, 27.812rem)5rem;
     height: 29.125rem;
     position: relative;
     right: 0;
