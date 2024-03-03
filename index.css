@@ -135,12 +135,12 @@ body {
 .promo-photos {
     gap: 30.0px;
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 
 .promo-photo-container {
-    width: 350.0px;
+    width: 100%;
     height: 300.0px;
     position: relative;
     background: url('./data/274px-Victor_Tsoi_1986_cropped.jpg') no-repeat center;
@@ -307,7 +307,7 @@ body {
 }
 
 
-.desc-information img {
+.info-photo {
     margin-right: 20.0px;
 }
 
