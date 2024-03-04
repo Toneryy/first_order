@@ -421,6 +421,7 @@
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 60.0px;
+        width: 300px
     }
 
     .stages-title {
@@ -442,10 +443,12 @@
         letter-spacing: 0%;
         text-align: left;
         box-sizing: border-box;
+        width: 100px;
     }
     
     
     .advantage-text {
+        width: 100px;
         padding-top: 15px;
         font-size: 18px;
         font-weight: 400;
@@ -462,10 +465,6 @@
         flex-direction: row;
         gap: 225px;
         margin-left: 0px;
-    }
-
-    .advantages-f-l .advantage:last-child {
-
     }
 
     .advantages-s-l {
@@ -487,19 +486,33 @@
     }
 
     .stages-photo {
-        margin-top: -100px;
-        width: 510px;
         margin-left: -100px;
+        width: 510px;
         height: 74px;
-        transform: rotate(270deg);
+        transform: rotate(270deg) rotateX(180deg);
         display: flex;
         justify-content: center;
+    }
+
+    .txt {
+        width: 100px;
+    }
+
+    .adv2 {
+        margin-left: -200px;
+    }
+
+    .adv3 {
+        margin-left: -100px;
+    }
+
+    .adv4 {
+        margin-left: -300px;
     }
 
     .wrapper-questions {
         padding-top: 2000px;
     }
-
 
     footer {
         display: none;
@@ -525,9 +538,9 @@
         display: block;
     }
 
-    section:nth-child(5) {
+    /* section:nth-child(5) {
         display: block;
-    }
+    } */
 
     section:nth-child(6) {
         display: block;
