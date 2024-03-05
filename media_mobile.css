@@ -507,6 +507,7 @@
     }
 
     .want-work-subtitle .first-line-sub {
+        width: 304px;
         height: 18px;
         padding-top: 13px;
         font-size: 12px;
@@ -515,6 +516,7 @@
     }
 
     .want-work-subtitle .second-line-sub {
+        width: 162px;
         height: 21px;
         padding-top: 1px;
         font-size: 12px;
@@ -604,8 +606,6 @@
     }
 
 
-
-    
 
 
     /* REVIEWS */
@@ -889,11 +889,9 @@
 
 }
 
-/* @media screen and (max-width: 375px) {
-    .wrapper, .wrapper-call, .wrapper-call-yourself, .wrapper-full, .wrapper-promo, .wrapper-questions {
-        max-width: 315px;
-    }
-} */
+@media (min-width: 480px) and (max-width:1159px) {
+    
+}
 
 
 /* ADAPTIVE END */
