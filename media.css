@@ -74,6 +74,8 @@
         height: 63.0px;
     }
 
+
+
     .nav-button {
         top: 37px;
     }
@@ -116,8 +118,6 @@
 
     .promo-photos-wrap {
         max-width: 315px;
-        
-        /
     }
 
     .promo-photos {
@@ -430,7 +430,65 @@
 
 
 
+    .wrapper-services {
+        margin: 0 auto;
+        max-width: 315px;
+        padding-top: 52px;
+    }
 
+    .services-title {
+        height: 21px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .services-squares {
+        padding-top: 51px;
+    }
+
+    .spb {
+        width: 136px;
+        height: 78px;
+        margin-right: 43px;
+        border-radius: 20px 0px 20px 0px;
+    }
+
+    .out-spb {
+        width: 136px;
+        height: 78px;
+        border-radius: 0px 20px 0px 20px;
+    }
+
+    .first-square-line {
+        padding-top: 12px;
+        padding-left: 15px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .second-square-line {
+        padding-top: 9px;
+        padding-left: 23px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .out-spb .first-square-line {
+        padding-top: 12.0px;
+        padding-left: 8.0px;
+    }
+    
+    
+    .out-spb .second-square-line {
+        padding-top: 5.0px;
+        padding-left: 10.0px;
+    }
+
+
+    .wrapper-call {
+        max-width: 315px;
+        padding-top: 66px;
+    }
 
 
 
@@ -689,26 +747,32 @@
 
 
     .agreement-checkbox {
+        display: flex;
         padding-right: 7.0px;
     }
-    
-    
+
     .agreement-checkbox-text {
         display: flex;
+        width: 223px;
         margin-top: -22px;
         padding-left: 14.0px;
     }
     
+    .agreement-checkbox-text h4 {
+        width: 223px;
+    }
     
     .agreement-text {
+        display: flex;
+        width: 203px;
+        line-height: 130%;
         padding-left: 5.0px;
         font-size: 9px;
     }
 
 
     .info-container {
-        padding-left: 33px;
-        padding-right: 33px;
+        max-width: 249px;
         padding-top: 114px;
     }
 
@@ -724,8 +788,8 @@
     }
 
     .manager {
-        width: 104px;
-        height: 30px;
+        width: 116px;
+        height: 40px;
         line-height: 15px;
         font-weight: 600;
         margin-right: 18px;
@@ -743,25 +807,35 @@
     
 
 
-    /* section:nth-child(5) {
-        display: none;
-    } */
+
+    .social-medias {
+        padding-top: 51.0px;
+        gap: 20.0px;
+        max-width: 214px;
+    }
+
+    .social-medias img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .label {
+        max-width: 97px;
+        margin: 0 auto;
+        font-size: 13px;
+        line-height: 20px;
+        padding-bottom: 11px;
+    }
+
+
     
     section:nth-child(7) {
         display: none;
     }
 
-    section:nth-child(8) {
+    /* section:nth-child(10) {
         display: none;
-    }
-
-    section:nth-child(10) {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
+    } */
 
 }
 
