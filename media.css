@@ -84,8 +84,8 @@
     }
 
     .wrapper {
-        padding-left: 30px;
-        padding-right: 30px;
+        
+        
         padding-top: 0;
     }
 
@@ -116,8 +116,9 @@
     }
 
     .promo-photos-wrap {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        /
     }
 
     .promo-photos {
@@ -178,8 +179,9 @@
     }
 
     .wrapper-full {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 71px;
     }
 
@@ -364,8 +366,9 @@
     
 
     .wrapper-repertuar {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 65.0px;
     }
 
@@ -393,8 +396,9 @@
 
 
     .wrapper-promo {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 63.0px;
     }
 
@@ -432,8 +436,9 @@
 
 
     .wrapper-call-yourself {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 60px;
     }
 
@@ -498,8 +503,9 @@
 
 
     .wrapper-reviews {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 87px;
     }
 
@@ -525,10 +531,10 @@
 
 
     .wrapper-stages {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 60.0px;
-        width: 300px
     }
 
     .stages-title {
@@ -621,8 +627,9 @@
 
 
     .wrapper-questions {
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 315px;
+        
+        
         padding-top: 60px;
     }
 
@@ -677,7 +684,7 @@
         font-size: 15px;
         line-height: 130%;
         margin: 0 auto;
-        padding-left: 47px;
+        padding-left: 64px;
     }
 
 
@@ -698,6 +705,43 @@
         padding-left: 5.0px;
         font-size: 9px;
     }
+
+
+    .info-container {
+        padding-left: 33px;
+        padding-right: 33px;
+        padding-top: 114px;
+    }
+
+    .managers {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .first-manager {
+        margin-right: unset;
+        padding-bottom: 3px;
+    }
+
+    .manager {
+        width: 104px;
+        height: 30px;
+        line-height: 15px;
+        font-weight: 600;
+        margin-right: 18px;
+        text-align: right;
+    }
+    
+    
+    .contact {
+        width: 127px;
+        height: 30px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+    }
+    
 
 
     /* section:nth-child(5) {
