@@ -84,8 +84,7 @@
     }
 
     .wrapper {
-        
-        
+        max-width: 315px;
         padding-top: 0;
     }
 
@@ -628,8 +627,7 @@
 
     .wrapper-questions {
         max-width: 315px;
-        
-        
+        margin: 0 auto;
         padding-top: 60px;
     }
 
@@ -641,7 +639,8 @@
 
     .questions-form {
         padding-top: 0.0px;
-        margin: 0 55.0px 0 55.0px;
+        max-width: 265px;
+        margin-left: 31px;
         align-items: center;
         justify-content: center;
     }
@@ -684,7 +683,7 @@
         font-size: 15px;
         line-height: 130%;
         margin: 0 auto;
-        padding-left: 64px;
+        padding-left: 90px;
     }
 
 
@@ -760,6 +759,9 @@
         display: none;
     }
 
+    footer {
+        display: none;
+    }
 
 }
 
