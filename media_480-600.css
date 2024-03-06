@@ -559,12 +559,12 @@
 
 
         .wrapper-stages {
-            max-width: 420px;
+            max-width: 315px;
             padding-top: 60.0px;
         }
     
         .stages-title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 27px;
         }
@@ -660,15 +660,16 @@
         }
     
     
+
         .wrapper-questions {
-            max-width: 315px;
+            max-width: 420px;
             margin: 0 auto;
-            padding-top: 60px;
+            padding-top: 80px;
         }
     
         .questions-title {
             height: 25px;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 160%;
         }
     
@@ -682,18 +683,18 @@
         
         .contact-container {
             justify-content: center;
-            width: 265.0px;
-            height: 35.0px;
+            width: 400.0px;
+            height: 85.0px;
         }
     
         .input-phone {
-            width: 121px;
-            height: 32px;
-            font-size: 9px;
+            width: 182px;
+            height: 54px;
+            font-size: 12px;
             font-weight: 400;
             line-height: 160%;
             border-radius: 8.0px;
-            margin-right: 23.0px;
+            margin-right: 36.0px;
             padding-left: 8.0px;
             background-image: url('./data/phone.png') no-repeat center;
             background-size: 9.0px;
@@ -701,9 +702,9 @@
         
         
         .contact-button {
-            width: 121.0px;
-            height: 35.0px;
-            font-size: 9px;
+            width: 182px;
+            height: 54px;
+            font-size: 12px;
             font-weight: 400;
             line-height: 160%;
             border-radius: 8.0px;
@@ -712,13 +713,13 @@
     
         
         .form-title {
-            width: 120px;;
+            width: 120px;
             height: 20px;
-            padding-top: 21.5px;
-            font-size: 15px;
+            padding-top: 40px;
+            font-size: 17px;
             line-height: 130%;
             margin: 0 auto;
-            padding-left: 90px;
+            padding-left: 147px;
         }
     
     
@@ -731,32 +732,34 @@
         .agreement-checkbox-text {
             display: flex;
             width: 223px;
-            margin-top: -22px;
+            margin-top: -42px;
             padding-left: 14.0px;
         }
         
         .agreement-checkbox-text h4 {
-            width: 223px;
+            width: 373px;
         }
         
         .agreement-text {
             display: flex;
-            width: 203px;
+            width: 373px;
             line-height: 130%;
-            padding-left: 5.0px;
-            font-size: 9px;
+            padding-left: 8.0px;
+            font-size: 10px;
         }
     
+
     
+
         .info-container {
-            max-width: 249px;
+            max-width: 300px;
             padding-top: 114px;
         }
     
         .managers {
             display: flex;
             flex-direction: column;
-            font-size: 10px;
+            font-size: 12px;
         }
     
         .first-manager {
@@ -765,7 +768,7 @@
         }
     
         .manager {
-            width: 116px;
+            width: 150px;
             height: 40px;
             line-height: 15px;
             font-weight: 600;
@@ -775,7 +778,7 @@
         
         
         .contact {
-            width: 127px;
+            width: 160px;
             height: 30px;
             font-weight: 400;
             line-height: 15px;
@@ -783,32 +786,30 @@
         }
         
     
+
     
     
         .social-medias {
-            padding-top: 51.0px;
+            display: flex;
+            justify-content: center;
+            padding-top: 61.0px;
             gap: 20.0px;
             max-width: 214px;
         }
     
         .social-medias img {
-            width: 39px;
-            height: 39px;
+            width: 45px;
+            height: 45px;
         }
     
         .label {
+            display: flex;
+            justify-content: center;
             max-width: 97px;
             margin: 0 auto;
             font-size: 13px;
             line-height: 20px;
-            padding-bottom: 11px;
+            padding-bottom: 20px;
         }
     
-    }
-
-
-
-    footer {
-        display: none;
-    }
 }

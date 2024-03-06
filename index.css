@@ -266,7 +266,7 @@ body {
 
 
 /* PROMO-PHOTOS STYLES START */
-.promo-photos-wrap {
+/* .promo-photos-wrap {
     max-width: 1110.0px;
     margin: 0 auto;
     position: relative;
@@ -325,7 +325,7 @@ body {
 .right-arrow {
     text-align: right;
     margin-top: 120.0px;
-}
+} */
 
 
 /* PROMO-PHOTOS STYLES END */
@@ -1570,4 +1570,8 @@ body {
     background-color: rgb(249, 221, 221);
     color: black;
     border: rgb(249, 221, 221);
+}
+
+.all {
+    display: none;
 }
