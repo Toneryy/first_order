@@ -37,7 +37,7 @@ article img{ /*размер изображений слайдера*/
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 960px; /*максимальнная длинна*/
+	max-width: 720px; /*максимальнная длина*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
@@ -49,7 +49,7 @@ article img{ /*размер изображений слайдера*/
 #switch5:checked ~ #controls label:nth-child(4){
 	background: url('data/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: left;
-	margin: 0 0 0 -84px; /*сдвиг влево*/
+	margin: -76px 0 0 -84px; /*сдвиг влево*/
 	display: block;
 	height: 68px;
 	width: 68px;
@@ -63,7 +63,7 @@ article img{ /*размер изображений слайдера*/
 #switch5:checked ~ #controls label:nth-child(1){
 	background: url('data/next.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: right;
-	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	margin: -76px -84px 0 0; /*сдвиг вправо*/
 	display: block;
 	height: 68px;
 	width: 68px;
@@ -247,7 +247,7 @@ body {
 
 
 .intro-title {
-    max-width: 158.0px;
+    max-width: 176.0px;
     font-family: Poppins;
     font-size: 48.0px;
     font-weight: 700;
@@ -263,72 +263,6 @@ body {
     font-weight: 700;
     line-height: 54.0px;
 }
-
-
-/* PROMO-PHOTOS STYLES START */
-/* .promo-photos-wrap {
-    max-width: 1110.0px;
-    margin: 0 auto;
-    position: relative;
-}
-
-
-.promo-photos {
-    gap: 30.0px;
-    display: flex;
-    justify-content: center;
-}
-
-
-.promo-photo-container {
-    width: 100%;
-    height: 300.0px;
-    position: relative;
-    background: url('./data/274px-Victor_Tsoi_1986_cropped.jpg') no-repeat center;
-    background-size: cover;
-    border-bottom-right-radius: 16pt;
-    border-top-left-radius: 16pt;
-    overflow: hidden;
-    transform: translateY(-50%);
-}
-
-
-.container-cover {
-    width: 350.0px;
-    height: 60.0px;
-    padding: 1em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(138, 14, 15, 0.7);
-    border-top-left-radius: 16pt;
-}
-
-
-.promo-title {
-    font-family: Poppins;
-    font-size: 16.0px;
-    font-weight: 500;
-    line-height: 24.0px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-
-.left-arrow {
-    text-align: left;
-    margin-top: 120.0px;
-}
-
-
-.right-arrow {
-    text-align: right;
-    margin-top: 120.0px;
-} */
-
-
-/* PROMO-PHOTOS STYLES END */
 
 
 /* DESCRIPTION STYLES START */
@@ -362,7 +296,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 72.0px;
     letter-spacing: 0%;
@@ -1252,7 +1186,7 @@ body {
     float: right;
     margin-right: 80.0px;
     border-radius: 30.0px 0.0px 30.0px 0.0px;
-    background: url('./data/var_1.png') no-repeat center;
+    background: url('./data/sAjvaU0N6G4-1.jpg') no-repeat center;
     background-size: 100%;
 }
 
@@ -1572,6 +1506,3 @@ body {
     border: rgb(249, 221, 221);
 }
 
-.all {
-    display: none;
-}

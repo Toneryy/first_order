@@ -1,3 +1,5 @@
 @media (min-width: 601px) and (max-width:850px) {
-    
+    .all {
+        display: none;
+    }
 }
