@@ -566,17 +566,18 @@
             display: flex;
             flex-direction: column;
             font-size: 18px;
+            padding-left: 166.5px;
         }
     
         .first-manager {
             margin-right: unset;
-            padding-bottom: 3px;
+            padding-bottom: 20px;
         }
     
         .manager {
-            width: 150px;
+            width: 200px;
             height: 40px;
-            line-height: 15px;
+            line-height: 25px;
             font-weight: 600;
             margin-right: 18px;
             text-align: right;
@@ -584,16 +585,37 @@
         
         
         .contact {
-            width: 160px;
+            width: 198px;
             height: 30px;
             font-weight: 400;
-            line-height: 15px;
+            line-height: 25px;
             text-align: left;
         }
         
     
         .all {
             display: none;
+        }
+
+        .agreement-checkbox {
+            padding-right: 7.0px;
+        }
+        
+        .agreement-checkbox h4 {
+            width: 500px;
+        }
+
+        
+        .agreement-checkbox-text {
+            display: flex;
+            margin-left: -162.0px;
+        }
+        
+        
+        .agreement-text {
+            padding-left: 5.0px;
+            text-decoration: none;
+            color: rgb(126, 134, 142);
         }
     
     
