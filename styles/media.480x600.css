@@ -1,4 +1,9 @@
 @media (min-width: 480px) and (max-width:600px) {
+
+    .slider-container {
+        display: none;
+    }
+    
     .header-ava img {
         width: 30px;
         height: 30px;
@@ -11,7 +16,7 @@
     .intro {
         height: 0px;
         width: 100%;
-        background: url('./data/intro-mobile.png');
+        background: url('../data/intro-mobile.png');
         background-repeat: no-repeat;
         background-size:cover;
         background-color: red;
@@ -94,7 +99,7 @@
         width: 17.28px;
         height: 22px;
         margin-top: 39px;
-        /* background: url('./data/mobile-arrow.png') no-repeat center;
+        /* background: url('../data/mobile-arrow.png') no-repeat center;
         background-size: cover; */
         border-radius: 10px 0 10px 0;
     }
@@ -102,7 +107,7 @@
     .right-arrow {
         width: 17.28px;
         height: 22px;
-        /* background: url('./data/mobile-arrow-right.png') no-repeat center;
+        /* background: url('../data/mobile-arrow-right.png') no-repeat center;
         background-size: cover; */
         margin-top: 39px;
         margin-left: 105px;
@@ -488,7 +493,7 @@
 
     .call-yourself-back-photo {
         height: 200px;
-        background: url('./data/480-600/480-back-photo.png') no-repeat center;
+        background: url('../data/480-600/480-back-photo.png') no-repeat center;
         background-size: 100%;
         padding-top: 13px;
     }
@@ -524,7 +529,7 @@
     .call-yourself-photo {
         width: 141px;
         height: 217px;
-        background: url('./data/480-600/call-420-photo.png') no-repeat center;
+        background: url('../data/480-600/call-420-photo.png') no-repeat center;
         background-size: cover;
         margin-top: -168px;
         margin-right: 23px;
@@ -697,7 +702,7 @@
             border-radius: 8.0px;
             margin-right: 36.0px;
             padding-left: 8.0px;
-            background-image: url('./data/phone.png') no-repeat center;
+            background-image: url('../data/phone.png') no-repeat center;
             background-size: 9.0px;
         }
         

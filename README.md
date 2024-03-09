@@ -13,4 +13,4 @@ https://pixso.net/app/editor/NYzBqztyYjIpUWo2d73lLQ?icon_type=1&page-id=0%3A1 П
 2) Установка базы данных в backend/backend/settins.py/[DATABASE]
 3) Прописать правильные url хоста в urls.py
 4) В терминале в первой папке backend прописать '$ py manage.py runserver'
-5) Для администрирование создаётся пользователь через комманду '$ py manage.py createsuperuser' и переход по http://[host]:[port]/admin
+5) Для администрирования создаётся пользователь через комманду '$ py manage.py createsuperuser' и переход по http://[host]:[port]/admin

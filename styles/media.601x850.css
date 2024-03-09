@@ -3,6 +3,9 @@
         display: none;
     }
     
+    .slider-container {
+        display: none;
+    }
     .header-ava img {
         width: 40px;
         height: 40px;
@@ -16,7 +19,7 @@
     .intro {
         height: 0px;
         width: 100%;
-        background: url('./data/intro-mobile.png');
+        background: url('../data/intro-mobile.png');
         background-repeat: no-repeat;
         background-size:cover;
         background-color: red;
@@ -436,7 +439,7 @@
 
     .call-yourself-back-photo {
         height: 236px;
-        background: url('./data/601-850/back-601.png') no-repeat center;
+        background: url('../data/601-850/back-601.png') no-repeat center;
         background-size: 100%;
         padding-top: 13px;
     }
@@ -472,7 +475,7 @@
     .call-yourself-photo {
         width: 180px;
         height: 280px;
-        background: url('./data/480-600/call-420-photo.png') no-repeat center;
+        background: url('../data/480-600/call-420-photo.png') no-repeat center;
         background-size: cover;
         margin-top: -208px;
         margin-right: 32px;
@@ -646,7 +649,7 @@
             border-radius: 8.0px;
             margin-right: 36.0px;
             padding-left: 8.0px;
-            background-image: url('./data/phone.png') no-repeat center;
+            background-image: url('../data/phone.png') no-repeat center;
             background-size: 9.0px;
         }
         

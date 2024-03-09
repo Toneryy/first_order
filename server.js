@@ -5,7 +5,7 @@ const path = require('path');
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
     if (filePath === './') {
-        filePath = './index.html';
+        filePath = './html/index.html';
     }
 
     const extname = path.extname(filePath);
@@ -22,14 +22,14 @@ const server = http.createServer((req, res) => {
     fs.readFile(filePath, (err, content) => {
         if (err) {
             if (err.code === 'ENOENT') {
-                res.writeHead(404, {'Content-Type': 'text/plain'});
+                res.writeHead(404, { 'Content-Type': 'text/plain' });
                 res.end('File not found');
             } else {
-                res.writeHead(500, {'Content-Type': 'text/plain'});
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Server error');
             }
         } else {
-            res.writeHead(200, {'Content-Type': contentType});
+            res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf-8');
         }
     });

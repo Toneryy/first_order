@@ -3,26 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="media_mobile.css">
-    <link rel="stylesheet" href="media_480-600.css">
-    <link rel="stylesheet" href="media_601-850.css">
-    <link rel="stylesheet" href="media_851-1160.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="../styles/index.css">
+	<link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/media.mobile.css">
+    <link rel="stylesheet" href="../styles/media.480x600.css">
+    <link rel="stylesheet" href="../styles/media.601x850.css">
+    <link rel="stylesheet" href="../styles/media.851x1160.css">
+    <link rel="stylesheet" href="../styles/slider.style.css" />
+    <script src="../js/slider.script.js" defer></script>
+    <script src="../js/eventHandler.js"></script>
     <title>Рок группа</title>
 </head>
 <body>
-    <script src="app.js"></script>
     <div id="anchor-top"></div>
 
     <header id="header" class="header">
         <div class="wrapper">
             <div class="header-wrapper">
                 <div class="header-ava">
-                    <a href="#" onclick="scrollToSection('#anchor-top')"><img src="./data/ava.png"></a>
+                    <a href="#" onclick="scrollToSection('#anchor-top')"><img src="../data/ava.png"></a>
                 </div>
                 <nav id="nav" class="nav">
                     <ul class="header-list">
@@ -45,17 +48,17 @@
                             <a href="#" onclick="scrollToSection('#anchor-between')" class="header-link">СВЯЗАТЬСЯ С НАМИ</a>
                         </li>
                     </ul>
-                    <button id="nav-button" class="nav-button"><img id="nav-button-image" src="./data/catalog-mb.png" alt="catalog"></button>
+                    <button id="nav-button" class="nav-button"><img id="nav-button-image" src="../data/catalog-mb.png" alt="catalog"></button>
                     <script>
                         document.getElementById("nav-button").addEventListener("click", (e) => {
                             let nav = document.getElementById("nav"); 
                             let button = document.getElementById("nav-button-image")
                             if (nav.classList.contains('open')) {
                                 nav.classList.remove("open");
-                                button.src = "./data/catalog-mb.png";
+                                button.src = "../data/catalog-mb.png";
                             } else {
                                 nav.classList.add("open");
-                                button.src = "./data/nav-close.svg";
+                                button.src = "../data/nav-close.svg";
                             }
                         })
                     </script>
@@ -75,100 +78,47 @@
             </div>
         </section>
 
-        <div class="all">
-            <input checked type="radio" name="respond" id="desktop">
-                <article id="slider">
-                        <input checked type="radio" name="slider" id="switch1">
-                        <input type="radio" name="slider" id="switch2">
-                        <input type="radio" name="slider" id="switch3">
-                        <input type="radio" name="slider" id="switch4">
-                        <input type="radio" name="slider" id="switch5">
-                        <input type="radio" name="slider" id="switch6">
-                        <input type="radio" name="slider" id="switch7">
-                        <input type="radio" name="slider" id="switch8">
-                        <input type="radio" name="slider" id="switch9">
-                        <input type="radio" name="slider" id="switch10">
-                        <input type="radio" name="slider" id="switch11">
-                        <input type="radio" name="slider" id="switch12">
-                        <input type="radio" name="slider" id="switch13">
-                        <input type="radio" name="slider" id="switch14">
-                        <input type="radio" name="slider" id="switch15">
-                        <input type="radio" name="slider" id="switch16">
-                        <input type="radio" name="slider" id="switch17">
-                        <input type="radio" name="slider" id="switch18">
-                    <div id="slides">
-                        <div id="overflow">
-                            <div class="image">
-                                <article><img src=".data/slider/1.jpg"></article>
-                                <article><img src=".data/slider/2.jpg"></article>
-                                <article><img src=".data/slider/3.jpg"></article>
-                                <article><img src=".data/slider/4.jpg"></article>
-                                <article><img src=".data/slider/5.jpg"></article>
-                                <article><img src=".data/slider/6.jpg"></article>
-                                <article><img src=".data/slider/7.png"></article>
-                                <article><img src=".data/slider/8.png"></article>
-                                <article><img src=".data/slider/9.png"></article>
-                                <article><img src=".data/slider/10.png"></article>
-                                <article><img src=".data/slider/11.png"></article>
-                                <article><img src=".data/slider/12.png"></article>
-                                <article><img src=".data/slider/13.png"></article>
-                                <article><img src=".data/slider/14.jpg"></article>
-                                <article><img src=".data/slider/15.jpg"></article>
-                                <article><img src=".data/slider/16.jpg"></article>
-                                <article><img src=".data/slider/17.jpg"></article>
-                                <article><img src=".data/slider/18.jpg"></article>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="controls">
-                        <label for="switch1"></label>
-                        <label for="switch2"></label>
-                        <label for="switch3"></label>
-                        <label for="switch4"></label>
-                        <label for="switch5"></label>
-                        <label for="switch6"></label>
-                        <label for="switch7"></label>
-                        <label for="switch8"></label>
-                        <label for="switch9"></label>
-                        <label for="switch10"></label>
-                        <label for="switch11"></label>
-                        <label for="switch12"></label>
-                        <label for="switch13"></label>
-                        <label for="switch14"></label>
-                        <label for="switch15"></label>
-                        <label for="switch16"></label>
-                        <label for="switch17"></label>
-                        <label for="switch18"></label>
-
-                    </div>
-                    <div id="active">
-                        <label for="switch1"></label>
-                        <label for="switch2"></label>
-                        <label for="switch3"></label>
-                        <label for="switch4"></label>
-                        <label for="switch5"></label>
-                        <label for="switch6"></label>
-                        <label for="switch7"></label>
-                        <label for="switch8"></label>
-                        <label for="switch9"></label>
-                        <label for="switch10"></label>
-                        <label for="switch11"></label>
-                        <label for="switch12"></label>
-                        <label for="switch13"></label>
-                        <label for="switch14"></label>
-                        <label for="switch15"></label>
-                        <label for="switch16"></label>
-                        <label for="switch17"></label>
-                        <label for="switch18"></label>
-                    </div>
-                </article>
-        </div>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list">
+                  <img class="image-item" src="../data/slider/16.jpg" alt="img-16" />
+                  <img class="image-item" src="../data/slider/17.jpg" alt="img-17" />
+                  <img class="image-item" src="../data/slider/18.jpg" alt="img-18" />
+                  <img class="image-item" src="../data/slider/10.png" alt="img-10" />
+                  <img class="image-item" src="../data/slider/2.jpg" alt="img-2" />
+                  <img class="image-item" src="../data/slider/3.jpg" alt="img-3" />
+                  <img class="image-item" src="../data/slider/4.jpg" alt="img-4" />
+                  <img class="image-item" src="../data/slider/5.jpg" alt="img-5" />
+                  <img class="image-item" src="../data/slider/6.jpg" alt="img-6" />
+                  <img class="image-item" src="../data/slider/7.png" alt="img-7" />
+                  <img class="image-item" src="../data/slider/8.png" alt="img-8" />
+                  <img class="image-item" src="../data/slider/9.png" alt="img-9" />
+                  <img class="image-item" src="../data/slider/11.png" alt="img-11" />
+                  <img class="image-item" src="../data/slider/12.png" alt="img-12" />
+                  <img class="image-item" src="../data/slider/13.png" alt="img-13" />
+                  <img class="image-item" src="../data/slider/14.jpg" alt="img-14" />
+                  <img class="image-item" src="../data/slider/15.jpg" alt="img-15" />
+                  <img class="image-item" src="../data/slider/1.jpg" alt="img-1" />
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
 
         <section id="anchor-description" class="description">
             <div class="wrapper-full">
                 <div class="title-wrapper">
                     <div class="description-photo">
-                        <img src="./data/music_desc.png">
+                        <img src="../data/music_desc.png">
                     </div>
                     <h2 class="description-title">ПОЧЕМУ ИМЕННО МЫ?</h2>
                 </div>
@@ -186,31 +136,31 @@
                 </div>
                 <div class="desc-photos">
                     <div class="front-desc-photo">
-                        <img src="./data/exp.png">
+                        <img src="../data/exp.png">
                     </div>
                     <div class="back-desc-photo">
-                        <img src="./data/back-desk-photo.png">
+                        <img src="../data/back-desk-photo.png">
                     </div>
                 </div>
 
                 <div class="desc-information">
                     <div class="info-items-first-line">
                         <div class="info-item info-item-1">
-                            <img class="info-photo" src="./data/desc-info-photo.png">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
                             <h3>ID AHO</h3>
                         </div>
                         <div class="info-item info-item-2">
-                            <img class="info-photo" src="./data/desc-info-photo.png">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
                             <h3>год основания: 2020</h3>
                         </div>
                     </div>
                     <div class="info-items-second-line">
                         <div class="info-item info-item-1">
-                            <img class="info-photo" src="./data/desc-info-photo.png">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
                             <h3>репертуар: Поп-рок</h3>
                         </div>
                         <div class="info-item info-item-2">
-                            <img class="info-photo" src="./data/desc-info-photo.png">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
                             <h3>Санкт-Петербург</h3>
                         </div>
                     </div>
@@ -222,14 +172,14 @@
             <div id="anchor-about-us" class="wrapper-full">
                 <div class="group-title">
                     <div class="description-photo">
-                        <img src="./data/music_desc.png">
+                        <img src="../data/music_desc.png">
                     </div>
                     <h2>СОСТАВ ГРУППЫ</h2>
                 </div>
 
                 <div class="group-members">
                     <div class="group-member group-member-1">
-                        <img src="./data/sostav/first.png">
+                        <img src="../data/sostav/first.png">
                         <div class="group-text">
                             <div class="f-l-text">
                                 <h3>Алексей</h3>
@@ -250,7 +200,7 @@
                     </div>
 
                     <div class="group-member group-member-2">
-                        <img src="./data/sostav/second.png">
+                        <img src="../data/sostav/second.png">
                         <div class="group-text">
                             <div class="f-l-text">
                                 <h3>Евгений</h3>
@@ -270,7 +220,7 @@
                         </div>
                     </div>
                     <div class="group-member group-member-3">
-                        <img src="./data/sostav/third.png">
+                        <img src="../data/sostav/third.png">
                         <div class="group-text">
                             <div class="f-l-text">
                                 <h3>Роман</h3>
@@ -290,7 +240,7 @@
                         </div>
                     </div>
                     <div class="group-member group-member-4">
-                        <img src="./data/sostav/fourth.png">
+                        <img src="../data/sostav/fourth.png">
                         <div class="group-text">
                             <div class="f-l-text">
                                 <h3>Максим</h3>
@@ -317,7 +267,7 @@
             <div class="wrapper-repertuar">
                 <div class="repertuar-title">
                     <div class="description-photo">
-                        <img src="./data/music_desc.png">
+                        <img src="../data/music_desc.png">
                     </div>
                     <h2>РЕПЕРТУАР</h2>
                 </div>
@@ -325,8 +275,8 @@
                 <div class="music-list">
                     <div class="circle">
                         <picture>
-                            <source srcset="./data/851-1160/circle-851.png" media="(min-width: 851px) and (max-width:1160px)" />
-                            <img src="./data/circle-image.png">
+                            <source srcset="../data/851-1160/circle-851.png" media="(min-width: 851px) and (max-width:1160px)" />
+                            <img src="../data/circle-image.png">
                         </picture>
                     </div>
                     <div class="square">
@@ -578,7 +528,6 @@
                     <h2>промо-ролик</h2>
                 </div>
                 <div class="promo-video">
-                    <!-- <script src="app.js"></script> -->
                     <iframe src="https://www.youtube.com/embed/BImuzR9kkRk?si=obcNzJ6WEUK-xAYQ" title="ID Aho promo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                 </div>
             </div>
@@ -611,7 +560,7 @@
                             </div>
                         </div>
                         <div class="stages-photo">
-                            <img src="./data/timeline.png" alt="timeline">
+                            <img src="../data/timeline.png" alt="timeline">
                         </div>
                         <div class="advantages-s-l">
                             <div class="adv3">
@@ -754,11 +703,11 @@
                         </div>
                         <div class="call-yourself-line">
                             <picture>
-                                <source srcset="./data/851-1160/Line.png" media="(min-width: 851px) and (max-width:1160px)" />
-                                <source srcset="./data/601-850/Line.png" media="(min-width: 601px) and (max-width:850px)" />
-                                <source srcset="./data/480-600/420-call-line.png" media="(min-width: 480px) and (max-width:600px)" />
-                                <source srcset="./data/mobile-line.png" media="(min-width: 375px) and (max-width:479px)" />
-                                <img src="./data/Line-call.png" />
+                                <source srcset="../data/851-1160/Line.png" media="(min-width: 851px) and (max-width:1160px)" />
+                                <source srcset="../data/601-850/Line.png" media="(min-width: 601px) and (max-width:850px)" />
+                                <source srcset="../data/480-600/420-call-line.png" media="(min-width: 480px) and (max-width:600px)" />
+                                <source srcset="../data/mobile-line.png" media="(min-width: 375px) and (max-width:479px)" />
+                                <img src="../data/Line-call.png" />
                             </picture>
                         </div>
     
@@ -780,12 +729,12 @@
                     <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
                 </div>
                 <div class="reviews-photos">
-                    <img src="./data/reviews/5.jpg" class="review-photo review-photo-5">
-                    <img src="./data/reviews/2.jpg" class="review-photo review-photo-2">
-                    <img src="./data/reviews/3.jpg" class="review-photo review-photo-3">
-                    <img src="./data/reviews/4.jpg" class="review-photo review-photo-4">
-                    <img src="./data/reviews/1.jpg" class="review-photo review-photo-1">
-                    <img src="./data/reviews/6.jpg" class="review-photo review-photo-6">
+                    <img src="../data/reviews/5.jpg" class="review-photo review-photo-5">
+                    <img src="../data/reviews/2.jpg" class="review-photo review-photo-2">
+                    <img src="../data/reviews/3.jpg" class="review-photo review-photo-3">
+                    <img src="../data/reviews/4.jpg" class="review-photo review-photo-4">
+                    <img src="../data/reviews/1.jpg" class="review-photo review-photo-1">
+                    <img src="../data/reviews/6.jpg" class="review-photo review-photo-6">
                 </div>
             </div>
         </section>
@@ -866,10 +815,10 @@
                 </div>
 
                 <div class="social-medias">
-                    <a href="https://t.me/id_aho_music" target="_blank"><img src="./data/socials/tg.png"></a>
-                    <a href="https://vk.com/id__aho" target="_blank"><img src="./data/socials/vk.png"></a>
-                    <a href="https://www.instagram.com/id__aho?igsh=MXc0NHdoNHlzengxbg==&utm_source=qr" target="_blank"><img src="./data/socials/inst.png"></a>
-                    <a href="https://youtube.com/@ID_AHOspb?si=TdII6m5eVkYROEsf" target="_blank"><img src="./data/socials/youtube.png"></a>
+                    <a href="https://t.me/id_aho_music" target="_blank"><img src="../data/socials/tg.png"></a>
+                    <a href="https://vk.com/id__aho" target="_blank"><img src="../data/socials/vk.png"></a>
+                    <a href="https://www.instagram.com/id__aho?igsh=MXc0NHdoNHlzengxbg==&utm_source=qr" target="_blank"><img src="../data/socials/inst.png"></a>
+                    <a href="https://youtube.com/@ID_AHOspb?si=TdII6m5eVkYROEsf" target="_blank"><img src="../data/socials/youtube.png"></a>
                 </div>
 
                 <div class="label">
