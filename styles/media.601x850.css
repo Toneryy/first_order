@@ -571,7 +571,8 @@
         }
     
         .stages-photo img {
-            padding-right: 157px;
+            margin-top: -100px;
+            padding-right: 110px;
             width: 510px;
             height: 74px;
             
@@ -592,6 +593,11 @@
     
         .adv1 {
             margin-top: 100px;
+            margin-left: 70px;
+        }
+
+        .advantage {
+            margin-right: 130px;
         }
     
         .adv2 {
@@ -600,13 +606,13 @@
         }
     
         .adv3 {
-            margin-left: -108px;
+            margin-left: -190px;
             margin-top: 120px;
         }
     
         .adv4 {
-            margin-left: -323px;
-            margin-top: 90px;
+            margin-left: -350px;
+            margin-top: 85px;
         }
     
     
