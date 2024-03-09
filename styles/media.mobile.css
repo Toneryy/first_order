@@ -829,7 +829,7 @@
         display: none;
     }
     .slider-container {
-        display: none;
+        display: block;
     }
 
 }

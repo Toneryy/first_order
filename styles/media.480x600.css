@@ -1,8 +1,4 @@
 @media (min-width: 480px) and (max-width:600px) {
-
-    .slider-container {
-        display: none;
-    }
     
     .header-ava img {
         width: 30px;
