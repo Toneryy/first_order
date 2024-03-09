@@ -115,6 +115,9 @@ function submitPhone(event) {
     }
 }
 
+/**
+ * For backend admin panel
+ */
 function submitForm() {
     event.preventDefault(); 
 
