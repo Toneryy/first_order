@@ -887,13 +887,18 @@ ID AHO - Невозможно вернуть">
                         <input id="agrcheckbox" class="agreement-checkbox" type="checkbox" required/>
                         
                         <div class="agreement-text">
-                            <h4>Нажимая на кнопку, вы соглашаетесь с <a href=""><u>условиями обработки персональных данных</u></a></h4>
+                            <h4 id="text-to-click">Нажимая на кнопку, вы соглашаетесь с <a href=""><u>условиями обработки персональных данных</u></a></h4>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
     </section>
+    <script>
+        document.getElementById('text-to-click').addEventListener('click', function() {
+        document.getElementById('agrcheckbox').checked = !document.getElementById('agrcheckbox').checked;
+    });
+    </script>
 
     <script src="https://unpkg.com/imask"></script>
     <script>
