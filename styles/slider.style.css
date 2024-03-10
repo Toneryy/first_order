@@ -1,6 +1,6 @@
 .slider-container {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 20%;
+  padding-right: 20%;
   transform: translateY(-50%);
 }
 
