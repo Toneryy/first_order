@@ -367,7 +367,7 @@
     }
 
     .want-work-subtitle .first-line-sub {
-        width: 354px;
+        width: 420px;
         height: 18px;
         padding-top: 13px;
         font-size: 14px;
@@ -375,13 +375,21 @@
         line-height: 18px;
     }
 
+    .first-line-sub h3 {
+        width: 420px;
+    }
+
     .want-work-subtitle .second-line-sub {
-        width: 180px;
+        width: 420px;
         height: 21px;
         padding-top: 1px;
         font-size: 14px;
         font-weight: 300;
         line-height: 18px;
+    }
+
+    .second-line-sub h3 {
+        width: 420px;
     }
 
     .want-work-subtitle .second-line-sub strong {
