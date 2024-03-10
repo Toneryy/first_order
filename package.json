@@ -1,0 +1,16 @@
+{
+  "name": "first_order",
+  "version": "1.0.0",
+  "description": "https://pixso.net/app/editor/NYzBqztyYjIpUWo2d73lLQ?icon_type=1&page-id=0%3A1 Приглашаем вас присоединиться к Pixso Файл дизайна  \"ДИЗАЙН ДЛЯ ГРУППЫ (1)\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "emailjs": "^4.0.3"
+  }
+}

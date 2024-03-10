@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="../styles/slider.style.css" />
     <script src="../js/slider.script.js" defer></script>
     <script src="../js/eventHandler.js"></script>
+    <script src="../js/emailservice.js"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
+    <script>
+        (function() {
+            emailjs.init('_bUjQt8QJpJt5Eqr-');
+        })();
+    </script>
     <title>Рок группа</title>
 </head>
 <body>
@@ -635,7 +642,7 @@
                 </div>
                  
                 <div id="popup">
-                    <form id="myForm" onsubmit="submitForm(); return false;">
+                    <form id="myForm">
                         <div class="requestform-content">
                             <div id="requestform-div" class="requestform-div">
 
@@ -674,8 +681,7 @@
                                         <input class="requestform-content-field-input" type="date" id="requestdate" name="date" required>
                                     </div>
                                 </div>                            
-                                <button type="submit" id="requestform-submit" class="requestform-element">ОСТАВИТЬ ЗАЯВКУ</button>>
-                                    
+                                <button onclick="sendMail()" type="submit" id="requestform-submit" class="requestform-element">ОСТАВИТЬ ЗАЯВКУ</button>>
                             </div>
                         </div>
                         
@@ -743,7 +749,7 @@
 
     
     <section class="any-questions">
-        <form onsubmit="submitPhone(event)">
+        <form">
             <div class="wrapper-questions">
                 
                 <div class="questions-title"><h2>ОСТАЛИСЬ ВОПРОСЫ?</h2></div>
@@ -758,7 +764,7 @@
                         </div>
                         
                         <div class="send-form">
-                            <input  type="submit" class="contact-button" value="СВЯЗАТЬСЯ С НАМИ">
+                            <button  onclick="sendPhone()" class="contact-button" value="СВЯЗАТЬСЯ С НАМИ">
                         </div>
                         
                     </div>   
