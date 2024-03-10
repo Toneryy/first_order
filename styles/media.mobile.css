@@ -445,7 +445,7 @@
     }
 
     .want-work-subtitle .first-line-sub {
-        width: 365px;
+        width: 335px;
         height: 18px;
         padding-top: 13px;
         font-size: 12px;
@@ -454,11 +454,11 @@
     }
 
     .first-line-sub h3 {
-        width: 365px;
+        width: 335px;
     }
 
     .want-work-subtitle .second-line-sub {
-        width: 362px;
+        width: 335px;
         height: 21px;
         padding-top: 1px;
         font-size: 12px;
@@ -467,7 +467,7 @@
     }
     
     .second-line-sub h3 {
-        width: 365px;
+        width: 335px;
     }
 
     .want-work-subtitle .second-line-sub strong {
@@ -582,8 +582,6 @@
     }
 
     /* REVIEWS */
-
-
 
     .wrapper-stages {
         max-width: 315px;
