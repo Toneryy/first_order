@@ -299,7 +299,7 @@ ID AHO - Невозможно вернуть">
                 </div>
 
                 <div class="group-members">
-                    <div class="group-member group-member-1">
+                    <div id="gm1" class="group-member group-member-1">
                         <img src="../data/sostav/first.png">
                         <div class="group-text">
                             <div class="f-l-text">
@@ -310,7 +310,7 @@ ID AHO - Невозможно вернуть">
                             </div>
                         </div>
 
-                        <div class="mask">
+                        <div id="ms1" class="mask">
                             <h2>
                                 Алексей
                             </h2>
@@ -320,7 +320,7 @@ ID AHO - Невозможно вернуть">
                         </div>
                     </div>
 
-                    <div class="group-member group-member-2">
+                    <div id="gm2" class="group-member group-member-2">
                         <img src="../data/sostav/second.png">
                         <div class="group-text">
                             <div class="f-l-text">
@@ -331,7 +331,7 @@ ID AHO - Невозможно вернуть">
                             </div>
                         </div>
 
-                        <div class="mask">
+                        <div id="ms2" class="mask">
                             <h2>
                                 Евгений
                             </h2>
@@ -340,7 +340,7 @@ ID AHO - Невозможно вернуть">
                             </p>
                         </div>
                     </div>
-                    <div class="group-member group-member-3">
+                    <div id="gm3" class="group-member group-member-3">
                         <img src="../data/sostav/third.png">
                         <div class="group-text">
                             <div class="f-l-text">
@@ -351,7 +351,7 @@ ID AHO - Невозможно вернуть">
                             </div>
                         </div>
 
-                        <div class="mask">
+                        <div id="ms3" class="mask">
                             <h2>
                                 Роман
                             </h2>
@@ -360,7 +360,7 @@ ID AHO - Невозможно вернуть">
                             </p>
                         </div>
                     </div>
-                    <div class="group-member group-member-4">
+                    <div id="gm4" class="group-member group-member-4">
                         <img src="../data/sostav/fourth.png">
                         <div class="group-text">
                             <div class="f-l-text">
@@ -371,7 +371,7 @@ ID AHO - Невозможно вернуть">
                             </div>
                         </div>
 
-                        <div class="mask">
+                        <div id="ms4" class="mask">
                             <h2>
                                 Максим
                             </h2>
@@ -383,6 +383,32 @@ ID AHO - Невозможно вернуть">
                 </div>
             </div>
         </section>
+        <script>
+            document.getElementById("gm1").addEventListener("mouseover", (e) => {
+                document.getElementById("ms1").style.opacity = 1;
+            })
+            document.getElementById("gm1").addEventListener("mouseout", (e) => {
+                document.getElementById("ms1").style.opacity = 0;
+            })
+            document.getElementById("gm2").addEventListener("mouseover", (e) => {
+                document.getElementById("ms2").style.opacity = 1;
+            })
+            document.getElementById("gm2").addEventListener("mouseout", (e) => {
+                document.getElementById("ms2").style.opacity = 0;
+            })
+            document.getElementById("gm3").addEventListener("mouseover", (e) => {
+                document.getElementById("ms3").style.opacity = 1;
+            })
+            document.getElementById("gm3").addEventListener("mouseout", (e) => {
+                document.getElementById("ms3").style.opacity = 0;
+            })
+            document.getElementById("gm4").addEventListener("mouseover", (e) => {
+                document.getElementById("ms4").style.opacity = 1;
+            })
+            document.getElementById("gm4").addEventListener("mouseout", (e) => {
+                document.getElementById("ms4").style.opacity = 0;
+            })
+        </script>
 
         <section  class="repertuar">
             <div class="wrapper-repertuar">
