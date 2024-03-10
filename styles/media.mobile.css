@@ -64,7 +64,7 @@
 }
 
 
-@media (min-width: 375px) and (max-width:479px){
+@media (min-width: 360px) and (max-width:479px){
     .header-ava img {
         width: 30px;
         height: 30px;
