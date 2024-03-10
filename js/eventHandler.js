@@ -43,10 +43,10 @@ function scrollToSection(selector) {
     let button = document.getElementById("nav-button-image")
     if (nav.classList.contains('open')) {
         document.getElementById("nav").classList.remove("open");
-        button.src = "./data/catalog-mb.png";
+        button.src = "../data/catalog-mb.png";
     } else {
         document.getElementById("nav").classList.add("open");
-        button.src = "./data/nav-close.svg";
+        button.src = "../data/nav-close.svg";
     }
 }
 /**
