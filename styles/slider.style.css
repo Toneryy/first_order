@@ -107,7 +107,7 @@
   top: -10px;
   bottom: -10px;
 }
-@media (min-width: 375px) and (max-width:479px){
+@media (min-width: 360px) and (max-width:479px){
 	.slider-wrapper .image-list .image-item {
 		width: 200px;
 		height: 100px;
