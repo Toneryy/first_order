@@ -18,7 +18,7 @@ function sendMail() {
                 location: document.getElementById('requestlocation').value,
                 date: document.getElementById('requestdate').value
             }
-            emailjs.send("service_c17e3fn", "template_fzvydgr", params)
+            emailjs.send("service_ibt0yqx", "template_zvuwwth", params)
             .then(document.getElementById('requestname').value = '')
             .then(document.getElementById('requestphone').value = '')
             .then(document.getElementById('requestlocation').value = '')
@@ -51,7 +51,7 @@ function sendPhone() {
             var params =  {
                 phone: phone,
             }
-            emailjs.send("service_c17e3fn", "template_vesp9wq", params)
+            emailjs.send("service_ibt0yqx", "template_1vujh09", params)
             .then(document.getElementById('phoneNumber').value = '')
             .then(response => response.json())
             .then(alert("Письмо успешно отправлено!"))

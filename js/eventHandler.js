@@ -118,6 +118,30 @@ function submitPhone(event) {
 /**
  * For backend admin panel
  */
+
+const validateLocation = (location) => {
+    if (location.length > 10) {
+        return true
+    }
+
+    else {
+        return false
+    }
+}
+
+
+const validateDate = (date) => {
+    if (date.length > 0) {
+        return true
+    }
+
+    else {
+        return false
+    }
+}
+
+
+
 function submitForm() {
     event.preventDefault(); 
 

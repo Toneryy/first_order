@@ -134,7 +134,7 @@ ID AHO - Невозможно вернуть">
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
     <script>
         (function() {
-            emailjs.init('_bUjQt8QJpJt5Eqr-');
+            emailjs.init('pTRQMJUaC3d749DIn');
         })();
     </script>
     <title>ID Aho</title>
@@ -805,7 +805,7 @@ ID AHO - Невозможно вернуть">
                                 </div>
     
                                 <div class="requestform-element">
-                                    <div class="requestform-content-name">
+                                    <div class="requestform-content-name" required>
                                         <h5>Место проведения</h5>
                                     </div>
                                     <div class="requestform-content-field">
@@ -814,7 +814,7 @@ ID AHO - Невозможно вернуть">
                                 </div>
     
                                 <div class="requestform-element">
-                                    <div class="requestform-content-name">
+                                    <div class="requestform-content-name" required>
                                         <h5>Дата</h5>
                                     </div>
                                     <div class="requestform-content-field">
@@ -822,6 +822,38 @@ ID AHO - Невозможно вернуть">
                                     </div>
                                 </div>                            
                                 <button onclick="sendMail()" type="submit" id="requestform-submit" class="requestform-element">ОСТАВИТЬ ЗАЯВКУ</button>>
+                                <script>
+                                    let requestButton = document.getElementById('requestform-submit')
+                                    requestButton.addEventListener('click', function(){
+                                        for(let i = 0; i < 50; i++){
+    
+                                            let spark = document.createElement('i');
+                                            spark.classList.add('spark');
+    
+                                            const randomX = (Math.random() - 0.5) * window.innerWidth;
+                                            const randomY = (Math.random() - 0.5) * window.innerHeight;
+    
+                                            spark.style.setProperty('--x', randomX + 'px');
+                                            spark.style.setProperty('--y', randomY + 'px');
+    
+    
+                                            // Рандомный размер для spark
+                                            const randomSize = Math.random() * 8 + 2;
+                                            spark.style.width = randomSize + 'px';
+                                            spark.style.height = randomSize + 'px';
+    
+                                            const duration = Math.random() * 2 + 0.5;
+    
+                                            spark.style.animation = 'animate ${duration}s ease-out forwards';
+    
+                                            document.body.appendChild(spark);
+    
+                                            setTimeout(function(){
+                                                spark.remove();
+                                            }, 2000);
+                                        }
+                                    })
+                                </script>
                             </div>
                         </div>
                         
@@ -904,7 +936,39 @@ ID AHO - Невозможно вернуть">
                         </div>
                         
                         <div class="send-form">
-                            <button  onclick="sendPhone()" class="contact-button">СВЯЗАТЬСЯ С НАМИ</button>
+                            <button id="contact-button" onclick="sendPhone()" class="contact-button">СВЯЗАТЬСЯ С НАМИ</button>
+                            <script>
+                                let contactButton = document.getElementById('contact-button')
+                                contactButton.addEventListener('click', function(){
+                                    for(let i = 0; i < 50; i++){
+
+                                        let spark = document.createElement('i');
+                                        spark.classList.add('spark');
+
+                                        const randomX = (Math.random() - 0.5) * window.innerWidth;
+                                        const randomY = (Math.random() - 0.5) * window.innerHeight;
+
+                                        spark.style.setProperty('--x', randomX + 'px');
+                                        spark.style.setProperty('--y', randomY + 'px');
+
+
+                                        // Рандомный размер для spark
+                                        const randomSize = Math.random() * 8 + 2;
+                                        spark.style.width = randomSize + 'px';
+                                        spark.style.height = randomSize + 'px';
+
+                                        const duration = Math.random() * 2 + 0.5;
+
+                                        spark.style.animation = 'animate ${duration}s ease-out forwards';
+
+                                        document.body.appendChild(spark);
+
+                                        setTimeout(function(){
+                                            spark.remove();
+                                        }, 2000);
+                                    }
+                                })
+                            </script>
                         </div>
                         
                     </div>   
