@@ -1363,8 +1363,9 @@ body {
 
 
 .form-title {
-    width: 286.0px;
+    max-width: 286.0px;
     height: 47.0px;
+    justify-content: center;
     margin: 0 auto;
     font-family: Poppins;
     font-size: 36.0px;
@@ -1634,3 +1635,35 @@ body {
     border: rgb(249, 221, 221);
 }
 
+.conditions-wrapper {
+    padding-top: 200px;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@media (min-width: 360px) and (max-width:479px) {
+    .conditions-wrapper {
+        padding-top: 70px;
+        max-width: 315px;
+    }
+
+    .cond-title {
+        font-size: 24px;
+    }
+    
+    .cond-text {
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+.cond-title {
+    font-size: 48px;
+}
+
+.cond-text {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
