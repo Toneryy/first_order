@@ -534,7 +534,7 @@
         
         .advantage-text {
             width: 100px;
-            padding-top: 15px;
+            padding-top: 0px;
             font-size: 18px;
             font-weight: 400;
             line-height: 160%;
@@ -549,7 +549,7 @@
             display: flex;
             flex-direction: row;
             gap: 280px;
-            margin-left: 0px;
+            margin-left: 4px;
         }
     
         .advantages-s-l {
@@ -567,7 +567,7 @@
         }
     
         .stages-photo img {
-            padding-right: 157px;
+            padding-right: 0px;
             width: 510px;
             height: 74px;
             
@@ -583,7 +583,7 @@
         }
     
         .txt {
-            width: 100px;
+            width: 158px;
         }
     
         .adv1 {
@@ -592,18 +592,18 @@
         }
     
         .adv2 {
-            margin-top: 40px;
+            margin-top: 69px;
             margin-left: -200px;
         }
     
         .adv3 {
             margin-left: -130px;
-            margin-top: 100px;
+            margin-top: 42px;
         }
     
         .adv4 {
-            margin-left: -320px;
-            margin-top: 90px;
+            margin-left: -318px;
+            margin-top: 44px;
         }
     
     
