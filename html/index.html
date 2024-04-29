@@ -936,7 +936,7 @@ ID AHO - Невозможно вернуть">
                         </div>
                         
                         <div class="send-form">
-                            <button id="contact-button" onclick="sendPhone()" class="contact-button">СВЯЗАТЬСЯ С НАМИ</button>
+                            <button id="contact-button" onclick="sendPhone()" class="contact-button" disabled>СВЯЗАТЬСЯ С НАМИ</button>
                             <script>
                                 let contactButton = document.getElementById('contact-button')
                                 contactButton.addEventListener('click', function(){
@@ -977,9 +977,24 @@ ID AHO - Невозможно вернуть">
                         <input id="agrcheckbox" class="agreement-checkbox" type="checkbox" required/>
                         
                         <div class="agreement-text">
-                            <h4 id="text-to-click" required>Нажимая на кнопку, вы соглашаетесь с <a href="./conditions.html"><u>условиями обработки персональных данных</u></a></h4>
+                            <label for="agrcheckbox">Нажимая на кнопку, вы соглашаетесь с <a id="agrlink" href="./conditions.html"><u>условиями обработки персональных данных</u></a></label>
                         </div>
+                        <script>
+                            document.getElementById('agrcheckbox').addEventListener('change', function() {
+                                let submitButton = document.getElementById('contact-button');
+                                submitButton.disabled = !this.checked;
+                            });
+                        </script>
                     </div>
+                    <script>
+                        document.getElementById('contact-button').addEventListener('click', function() {
+                            if (this.disabled) {
+                                alert('Вы не поставили галочку');
+                            } else {
+                                // Ваш код обработки нажатия на кнопку
+                            }
+                        });
+                    </script>
                 </div>
             </div>
         </form>

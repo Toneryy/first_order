@@ -1,3 +1,6 @@
+
+
+
 window.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelectorAll('.video');
 

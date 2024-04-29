@@ -1641,22 +1641,7 @@ body {
     margin: 0 auto;
 }
 
-@media (min-width: 360px) and (max-width:479px) {
-    .conditions-wrapper {
-        padding-top: 70px;
-        max-width: 315px;
-    }
 
-    .cond-title {
-        font-size: 24px;
-    }
-    
-    .cond-text {
-        padding-top: 20px;
-        font-size: 12px;
-        line-height: 20px;
-    }
-}
 
 .cond-title {
     font-size: 48px;
@@ -1666,4 +1651,10 @@ body {
     padding-top: 20px;
     font-size: 16px;
     line-height: 20px;
+}
+
+
+
+#text-to-click:checked ~ #agrlink a {
+    pointer-events: auto;
 }
