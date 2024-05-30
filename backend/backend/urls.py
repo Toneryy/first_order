@@ -21,5 +21,6 @@ from object_server import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/phone', views.savePhoneEntity, name='savePhone'),
+    path('django_template', views.index, name='index'),
     path('api/request', views.saveFullRequsetEntity, name='saveRequest'),
 ]

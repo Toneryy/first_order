@@ -13,7 +13,7 @@ def savePhoneEntity(request):
         data = json.loads(request.body)
         obj = PhoneEntity.objects.create(
             phoneNumber=data['phoneNumber'], 
-            status="awaits"
+            status="Ожидает ответа"
         )
 
 @csrf_exempt
@@ -25,5 +25,8 @@ def saveFullRequsetEntity(request):
             phoneNumber=data['phoneNumber'], 
             location=data['location'], 
             date=data['date'],
-            status="awaits"
+            status="Ожидает ответа"
         )
+
+def index(request):
+    return render(request, "index.html")
