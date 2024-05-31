@@ -54,15 +54,10 @@ function sendPhone() {
             emailjs.send("service_ibt0yqx", "template_1vujh09", params)
             .then(document.getElementById('phoneNumber').value = '')
             .then(response => response.json())
-            .then(alert("Письмо успешно отправлено!"))
             .catch(error => {
                 console.error('Ошибка:', error);
             });;
             closePopup();
-        } else {
-            alert("Некорректный номер телефона")
-        }
-    } else {
-        alert("Слишком много запросов. Подождите...")
-    }
+        } 
+    } 
 }

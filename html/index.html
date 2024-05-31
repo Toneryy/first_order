@@ -825,7 +825,7 @@ ID AHO - Невозможно вернуть">
                                         <input class="requestform-content-field-input" type="date" id="requestdate" name="date" required>
                                     </div>
                                 </div>                            
-                                <button onclick="submitForm()" type="submit" id="requestform-submit" class="requestform-element">ОСТАВИТЬ ЗАЯВКУ</button>>
+                                <button onclick="sendMail(); submitForm();" type="submit" id="requestform-submit" class="requestform-element">ОСТАВИТЬ ЗАЯВКУ</button>>
                                 <script>
                                     let requestButton = document.getElementById('requestform-submit')
                                     requestButton.addEventListener('click', function(){
@@ -940,7 +940,7 @@ ID AHO - Невозможно вернуть">
                         </div>
                         
                         <div class="send-form">
-                            <button id="contact-button" onclick="submitPhone(event)" class="contact-button" disabled>СВЯЗАТЬСЯ С НАМИ</button>
+                            <button id="contact-button" onclick="sendPhone(); submitPhone(event);" class="contact-button" disabled>СВЯЗАТЬСЯ С НАМИ</button>
                             <script>
                                 let contactButton = document.getElementById('contact-button')
                                 contactButton.addEventListener('click', function(){
