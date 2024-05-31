@@ -56,26 +56,26 @@ function scrollToSection(selector) {
  * Validate phone number for pattern '+7 (000) 000-00-00'
  * whether or not there are spaces it does not matter
  */
-function validatePhone(number)
-{
-    if (number.length < 18) {
-        return false;
-    }
+function validatePhone(number) {
+	if (number == null || number == undefined) {
+		return false
+	}
+	if (number.length < 18) {
+		return false;
+	}
 
-    let i = 1;
-    if (number[0] != "+") {
-        i = 0;
-    } 
-    
-    while (i < number.length)
-    {
-        // Make sure it is a digit or a " ";
-        if (isNaN(number[i]) && number[i] != ")" && number[i] != "(" && number[i] != "-") {
-            return false;
-        }
-        i++;
-    }
-    return true;
+	let i = 1;
+	if (number[0] != "+") {
+		i = 0;
+	}
+
+	while (i < number.length) {
+		if (isNaN(number[i]) && number[i] != ")" && number[i] != "(" && number[i] != "-") {
+			return false;
+		}
+		i++;
+	}
+	return true;
 }
 
 /**
@@ -120,39 +120,23 @@ function submitPhone(event) {
  * For backend admin panel
  */
 const validateName = (name) => {
-    let index = 0;
-    while (index < name.length) {
-        if (!isNaN(name[index])) {
-            return false
-        }
-        index++
-    }
-    return true
+	let index = 0;
+	while (index < name.length) {
+		if (!isNaN(name[index])) {
+			return false
+		}
+		index++
+	}
+	return true
 }
-
 
 const validateLocation = (location) => {
-    if (location.length > 10) {
-        return true
-    }
-
-    else {
-        return false
-    }
+	return location.length >= 4;
 }
-
 
 const validateDate = (date) => {
-    if (date.length > 0) {
-        return true
-    }
-
-    else {
-        return false
-    }
+	return date.length > 0;
 }
-
-
 
 function submitForm() {
     event.preventDefault(); 
