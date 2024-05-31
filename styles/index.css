@@ -68,7 +68,7 @@ body {
 
 .flag-button {
     margin: 0;
-    float: right;
+    /* float: right; */
     display: flex;
     background: none;
     border: none;

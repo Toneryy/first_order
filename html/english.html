@@ -143,909 +143,844 @@ ID AHO - Невозможно вернуть">
 <body>
     <div id="anchor-top"></div>
 
-<header id="header" class="header">
-    <div class="wrapper">
-        <div class="header-wrapper">
-            <div class="header-ava">
-                <a href="#"><img src="../data/ava.png" alt="ID AHO Logo"></a>
-            </div> 
-            <nav id="nav" class="nav">
-                <ul class="header-list">
-                    <li class="header-item">
-                        <a href="#" onclick="scrollToSection('#anchor-description')" class="header-link">ABOUT US</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" onclick="scrollToSection('#anchor-about-us')" class="header-link">OUR BAND</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" onclick="scrollToSection('#anchor-repertuar')" class="header-link">REPERTOIRE</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" onclick="scrollToSection('#anchor-video')" class="header-link">VIDEO</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" onclick="scrollToSection('#anchor-services')" class="header-link">SERVICES</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" onclick="scrollToSection('#anchor-between')" class="header-link">CONTACT US</a>
-                    </li>
-                    <button id="flag-button" class="flag-button">
-                        <img id="flag-icon" src="/data/great-britain-flag.png" alt="English Flag">
-                    </button>
-                    <script src="/js/languages.js"></script>  
-                </ul>
-                <button id="nav-button" class="nav-button"><img id="nav-button-image" src="../data/catalog-mb.png" alt="Menu"></button>
-                <script>
-                    document.getElementById("nav-button").addEventListener("click", (e) => {
-                        let nav = document.getElementById("nav"); 
-                        let button = document.getElementById("nav-button-image")
-                        if (nav.classList.contains('open')) {
-                            nav.classList.remove("open");
-                            button.src = "../data/catalog-mb.png";
-                        } else {
-                            nav.classList.add("open");
-                            button.src = "../data/nav-close.svg";
-                        }
-                    });
-                </script>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<main class="main">
-    <section class="intro">
+    <header id="header" class="header">
         <div class="wrapper">
-            <div class="intro-title">
-                <h1>ID AHO</h1>
-            </div>
-            <p class="intro-subtitle">
-                Musical Cover Band
-            </p>
-        </div>
-    </section>
-    <div class="slider-container">
-        <div class="slider-wrapper">
-          <button id="prev-slide" class="slide-button material-symbols-rounded">
-            chevron_left
-          </button>
-          <ul class="image-list">
-              <img class="image-item" src="../data/slider/11.png" alt="img-11" />
-              <img class="image-item" src="../data/slider/17.jpg" alt="img-17" />
-              <img class="image-item" src="../data/slider/2.jpg" alt="img-2" />
-              <img class="image-item" src="../data/slider/14.jpg" alt="img-14" />
-              <img class="image-item" src="../data/slider/6.jpg" alt="img-6" />
-              <img class="image-item" src="../data/slider/9.png" alt="img-9" />
-              <img class="image-item" src="../data/slider/4.jpg" alt="img-4" />
-              <img class="image-item" src="../data/slider/5.jpg" alt="img-5" />
-              <img class="image-item" src="../data/slider/18.jpg" alt="img-18" />
-              <img class="image-item" src="../data/slider/10.png" alt="img-10" />
-              <img class="image-item" src="../data/slider/7.png" alt="img-7" />
-              <img class="image-item" src="../data/slider/16.jpg" alt="img-16" />
-              <img class="image-item" src="../data/slider/8.png" alt="img-8" />
-              <img class="image-item" src="../data/slider/3.jpg" alt="img-3" />
-              <img class="image-item" src="../data/slider/1.jpg" alt="img-1" />
-              <img class="image-item" src="../data/slider/12.png" alt="img-12" />
-              <img class="image-item" src="../data/slider/13.png" alt="img-13" />
-              <img class="image-item" src="../data/slider/15.jpg" alt="img-15" />
-          </ul>
-          <button id="next-slide" class="slide-button material-symbols-rounded">
-            chevron_right
-          </button>
-        </div>
-        <div class="slider-scrollbar">
-          <div class="scrollbar-track">
-            <div class="scrollbar-thumb"></div>
-          </div>
-        </div>
-      </div>
-      <section id="anchor-description" class="description">
-        <div class="wrapper-full">
-            <div class="title-wrapper">
-                <div class="description-photo">
-                    <img src="../data/music_desc.png">
-                </div>
-                <h2 class="description-title">WHY CHOOSE US?</h2>
-            </div>
-    
-            <div class="description-bio-text">
-                <h3>
-                    <p>Professional, responsible, bright, and fun - that's us!
-                    <p>You won't be able to take your eyes off us.</p>
-                    We will create an atmosphere that will make everyone dance and sing along with us.</p>
-                    <br>
-                    <p>We guarantee that you will never forget this day and you will have unforgettable impressions!</p>
-                    <br>
-                    <p>Cover band ID AHO is the perfect choice for any of your events.</p>
-                </h3>
-            </div>
-            <div class="desc-photos">
-                <div class="front-desc-photo">
-                    <img src="../data/exp.png">
-                </div>
-                <div class="back-desc-photo">
-                    <img src="../data/back-desk-photo.png">
-                </div>
-            </div>
-    
-            <div class="desc-information">
-                <div class="info-items-first-line">
-                    <div class="info-item info-item-1">
-                        <img class="info-photo" src="../data/desc-info-photo.png">
-                        <h3>ID AHO</h3>
-                    </div>
-                    <div class="info-item info-item-2">
-                        <img class="info-photo" src="../data/desc-info-photo.png">
-                        <h3>Founded: 2020</h3>
-                    </div>
-                </div>
-                <div class="info-items-second-line">
-                    <div class="info-item info-item-1">
-                        <img class="info-photo" src="../data/desc-info-photo.png">
-                        <h3>Repertoire: Pop-Rock</h3>
-                    </div>
-                    <div class="info-item info-item-2">
-                        <img class="info-photo" src="../data/desc-info-photo.png">
-                        <h3>Saint Petersburg</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="group-structure">
-        <div id="anchor-about-us" class="wrapper-full">
-            <div class="group-title">
-                <div class="description-photo">
-                    <img src="../data/music_desc.png">
-                </div>
-                <h2>GROUP MEMBERS</h2>
-            </div>
-    
-            <div class="group-members">
-                <div id="gm1" class="group-member group-member-1">
-                    <img src="../data/sostav/first.png">
-                    <div class="group-text">
-                        <div class="f-l-text">
-                            <h3>Aleksei</h3>
-                        </div>
-                        <div class="s-l-text">
-                            <h4>Vocalist</h4>
-                        </div>
-                    </div>
-    
-                    <div id="ms1" class="mask">
-                        <h2>
-                            Aleksei
-                        </h2>
-                        <p>
-                            Will captivate anyone from the first minute with his extraordinary dances, fiery charisma, rocker jumps, and excellent voice.
-                        </p>
-                    </div>
-                </div>
-    
-                <div id="gm2" class="group-member group-member-2">
-                    <img src="../data/sostav/second.png">
-                    <div class="group-text">
-                        <div class="f-l-text">
-                            <h3>Evgeniy</h3>
-                        </div>
-                        <div class="s-l-text">
-                            <h4>Drummer</h4>
-                        </div>
-                    </div>
-    
-                    <div id="ms2" class="mask">
-                        <h2>
-                            Evgeniy
-                        </h2>
-                        <p>
-                            The crush of all the girls, possibly even the guys. The most stylish and energetic drummer in Saint Petersburg.
-                        </p>
-                    </div>
-                </div>
-    
-                <div id="gm3" class="group-member group-member-3">
-                    <img src="../data/sostav/third.png">
-                    <div class="group-text">
-                        <div class="f-l-text">
-                            <h3>Roman</h3>
-                        </div>
-                        <div class="s-l-text">
-                            <h4>Bass Guitar</h4>
-                        </div>
-                    </div>
-    
-                    <div id="ms3" class="mask">
-                        <h2>
-                            Roman
-                        </h2>
-                        <p>
-                            You will forget what it's like when the "bass isn't heard." Will dazzle with the kindest smile on Earth.
-                        </p>
-                    </div>
-                </div>
-    
-                <div id="gm4" class="group-member group-member-4">
-                    <img src="../data/sostav/fourth.png">
-                    <div class="group-text">
-                        <div class="f-l-text">
-                            <h3>Maksim</h3>
-                        </div>
-                        <div class="s-l-text">
-                            <h4 id="anchor-repertuar">Lead Guitar</h4>
-                        </div>
-                    </div>
-    
-                    <div id="ms4" class="mask">
-                        <h2>
-                            Maksim
-                        </h2>
-                        <p>
-                            At first glance, a modest guy, but just watch him play and it gets very hot!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        document.getElementById("gm1").addEventListener("mouseover", (e) => {
-            document.getElementById("ms1").style.opacity = 1;
-        })
-        document.getElementById("gm1").addEventListener("mouseout", (e) => {
-            document.getElementById("ms1").style.opacity = 0;
-        })
-        document.getElementById("gm2").addEventListener("mouseover", (e) => {
-            document.getElementById("ms2").style.opacity = 1;
-        })
-        document.getElementById("gm2").addEventListener("mouseout", (e) => {
-            document.getElementById("ms2").style.opacity = 0;
-        })
-        document.getElementById("gm3").addEventListener("mouseover", (e) => {
-            document.getElementById("ms3").style.opacity = 1;
-        })
-        document.getElementById("gm3").addEventListener("mouseout", (e) => {
-            document.getElementById("ms3").style.opacity = 0;
-        })
-        document.getElementById("gm4").addEventListener("mouseover", (e) => {
-            document.getElementById("ms4").style.opacity = 1;
-        })
-        document.getElementById("gm4").addEventListener("mouseout", (e) => {
-            document.getElementById("ms4").style.opacity = 0;
-        })
-    </script>
-<section class="repertuar">
-    <div class="wrapper-repertuar">
-        <div class="repertuar-title">
-            <div class="description-photo">
-                <img src="../data/music_desc.png">
-            </div>
-            <h2>REPERTOIRE</h2>
-        </div>
-
-        <div class="music-list">
-            <div class="circle">
-                <picture>
-                    <source srcset="../data/851-1160/circle-851.png" media="(min-width: 851px) and (max-width:1160px)" />
-                    <img src="../data/circle-image.png">
-                </picture>
-            </div>
-            <div class="square">
-                <ul class="music-items">
-                    <span class="square-title">
-                        Our repertoire includes works by both Russian and international authors
-                    </span>
-                    <div class="scrollmenu">
-                        <br>
-                        Amiga – Letet
-                        <br>
-                        Artur Pirozhkov – Alkogolichka
-                        <br>
-                        Artur Pirozhkov – Zatsepilа
-                        <br>
-                        Andrey Gubin – Noch
-                        <br>
-                        Andrey Gubin – Devushki kak zvezdy
-                        <br>
-                        Andrey Gubin – Zima-kholoda
-                        <br>
-                        Aljans – Na zare
-                        <br>
-                        Bi-2 – Polkovnik
-                        <br>
-                        Bi-2 – Varvara
-                        <br>
-                        Basta – Sansara
-                        <br>
-                        Basta – Medlyachok
-                        <br>
-                        Bon Jovi – It’s my life
-                        <br>
-                        Boombox – Vakhtyoram
-                        <br>
-                        Vanila Sky (cover) - Zvenit yanvarskaya vyuga
-                        <br>
-                        Valentin Strykalo – Nashe leto
-                        <br>
-                        Valeriy Meladze – Tequila-Lyubov
-                        <br>
-                        Valeriy Meladze – Krasivo
-                        <br>
-                        Vanya Dmitrienko – Venera-Yupiter
-                        <br>
-                        Vaenga – Kuryu
-                        <br>
-                        Grazhdanskaya Oborona – Vsyo idyot po planu
-                        <br>
-                        Gradusy – Rezhissyor
-                        <br>
-                        Galibri & Mavik – Federiko Fellini
-                        <br>
-                        Dabro – Yunost
-                        <br>
-                        Jony – Kometa
-                        <br>
-                        Zhuki – Batareika
-                        <br>
-                        Zemlyane – Trava u doma
-                        <br>
-                        Zveri – Bryunetki i blondinki
-                        <br>
-                        Zveri – Do skoroy vstrechi
-                        <br>
-                        Zveri – Prosto takaya silnaya lyubov
-                        <br>
-                        Zveri – Dozhdi-pistolety
-                        <br>
-                        Zveri – Vsyo, chto tebya kasaetsa
-                        <br>
-                        Zveri – Rayony-kvartaly
-                        <br>
-                        Zveri – Dlya tebya
-                        <br>
-                        Zveri – Kapkany
-                        <br>
-                        Zveri – Tantsuy
-                        <br>
-                        Zveri – Napitki pokrepche
-                        <br>
-                        Zivert – Zelyonyye volny
-                        <br>
-                        Ivanushki International – Topoliny pukh
-                        <br>
-                        Irina Allegrova – Ugonshchitsa
-                        <br>
-                        KiSh – Durak i molniya
-                        <br>
-                        KiSh – Lesnik
-                        <br>
-                        KiSh – Kamnem po golove
-                        <br>
-                        KiSh – Prygnu so skaly
-                        <br>
-                        KiSh – Eli myaso muzhiki
-                        <br>
-                        KiSh – Kukla kolduna
-                        <br>
-                        KiSh – Proklyaty stary dom
-                        <br>
-                        KiSh – Severny flot
-                        <br>
-                        Kino – Videli noch
-                        <br>
-                        Kino – Peremen
-                        <br>
-                        Kino – Gruppa krovi
-                        <br>
-                        Kino – Kogda tvoya devushka bolna
-                        <br>
-                        Cream Soda, Khleb – Plachu na tekhno
-                        <br>
-                        Lyapis Trubetskoy – Au
-                        <br>
-                        Lyapis Trubetskoy – Yevpatoriya
-                        <br>
-                        Lyapis Trubetskoy – Kapital
-                        <br>
-                        Leprikonsy – Khali-gali
-                        <br>
-                        Leningrad – WWW
-                        <br>
-                        Leningrad – Ryba
-                        <br>
-                        Leningrad – V Pitere Pit
-                        <br>
-                        Lyusya Chebotina – Solntse Monako
-                        <br>
-                        Leonid Agutin – Khop-khey lala ley
-                        <br>
-                        Max Korzh – Nebo pomozhet nam
-                        <br>
-                        Max Korzh – Zhit v kayf
-                        <br>
-                        Mikhail Boyarskiy – Zelenoglazoye taksi
-                        <br>
-                        Miyagi & Endshpil feat. Rem Digga – I Got Love
-                        <br>
-                        MakSim – Znayesh li ty
-                        <br>
-                        Murat Nasyrov – Ya eto ty
-                        <br>
-                        Mumiy Troll – Medveditsa
-                        <br>
-                        Mumiy Troll – Vladivostok
-                        <br>
-                        MONATIK – Kruzhit
-                        <br>
-                        Max Barskih – Nezemnaya
-                        <br>
-                        Mr. President – Coco Jamboo
-                        <br>
-                        Moya Mishel – Zima v serdtse
-                        <br>
-                        Mirazh – Novy geroi
-                        <br>
-                        Mr. Credo – Medlyak
-                        <br>
-                        NILETTO – Lyubimka
-                        <br>
-                        Nervy – Batarei
-                        <br>
-                        Noize MC – Ustroy destroy
-                        <br>
-                        Otpetye Moshenniki – Lyubi menya lyubi
-                        <br>
-                        Pornofilmy – Ya tak soskuchilsya
-                        <br>
-                        Ruki Vverkh – 18 mne uzhe
-                        <br>
-                        Ruki Vverkh – On tebya tseluet
-                        <br>
-                        Ruki Vverkh – Alyosha
-                        <br>
-                        Ruki Vverkh – Chuzhiye guby
-                        <br>
-                        Ruki Vverkh – Ay yay yay
-                        <br>
-                        Rock-Ostrovа – Nichego ne govori
-                        <br>
-                        Smyslovyye Gallyutsinatsii – Vechno molodoy
-                        <br>
-                        Sultan Laguchev – Gorkiy vkus
-                        <br>
-                        Splin – Vykhoda net
-                        <br>
-                        Splin – Moyе serdtse
-                        <br>
-                        Sektor Gaza – 30 let
-                        <br>
-                        Sektor Gaza – Pora domoy
-                        <br>
-                        Tantsy Minus – Gorod skazka
-                        <br>
-                        Tantsy Minus – Polovinka
-                        <br>
-                        Tima Belorusskikh – Nezabudka
-                        <br>
-                        Feduk, Eldzhey – Rozovoye vino
-                        <br>
-                        Khabib – Yagoda Malinka
-                        <br>
-                        Hi-Fi – Sedmoy lepestok
-                        <br>
-                        Hi-Fi – Ne dano
-                        <br>
-                        Shura – Ty ne ver slezam
-                        <br>
-                        Yuriy Antonov – Mechta sbivayetsa
-                        <br>
-                        Yuriy Shatunov – Belye rozy
-                        <br>
-                        Yuriy Shatunov – Sedaya noch
-                        <br>
-                        Yaroslav Yevdokimov – Fantazyor
-                        <span class="red-text-songs">
-                            <br>
-                            <br>
-                            Works by ID AHO:
-                            <br>
-                            <br>
-                        </span>
-                        ID AHO – Zakroy glaza
-                        <br>
-                        ID AHO – Flyuger
-                        <br>
-                        ID AHO – Letat
-                        <br>
-                        ID AHO – Novaya
-                        <br>
-                        ID AHO – Abyuzer
-                        <br>
-                        ID AHO – V zakat
-                        <br>
-                        ID AHO – Gori
-                        <br>
-                        ID AHO – Gde byl by ya
-                        <br>
-                        ID AHO – Skazhi zachem
-                        <br>
-                        ID AHO – Nevozmozhno vernut
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="anchor-video" class="promo-section">
-    <div class="wrapper-promo">
-        <div class="promo-video-title">
-            <h2>Promo Video</h2>
-        </div>
-        <div class="promo-video">
-            <iframe src="https://www.youtube.com/embed/BImuzR9kkRk?si=obcNzJ6WEUK-xAYQ" title="ID Aho promo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-        </div>
-    </div>
-</section>
-
-<section class="cooperation-stages">
-    <div class="wrapper-stages">
-        <div class="stages-title">
-            COOPERATION STAGES
-        </div>
-        <div class="stages">
-            <div class="advantages">
-                <div class="advantages-f-l">
-                    <div class="advantage adv1">
-                        <div class="advantage-title">
-                            DETAILS
-                        </div>
-                        <div class="advantage-text">
-                            <p class="txt">Discussion of rider, repertoire, and other important details</p>
-                        </div>
-                    </div>
-                    <div class="advantage adv2">
-                        <div class="advantage-title">
-                            OUR PERFORMANCE
-                        </div>
-                        <div class="advantage-text">
-                            <p class="txt">We give you unforgettable emotions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="stages-photo">
-                    <img src="../data/timeline.png" alt="timeline">
-                </div>
-                <div class="advantages-s-l">
-                    <div class="adv3">
-                        <div class="advantage">
-                            <div class="advantage-title">
-                                APPLICATION
-                            </div>
-                            <div class="advantage-text">
-                                <p class="txt">Submit an application and our manager will contact you</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="adv4">
-                        <div class="advantage adv4">
-                            <div class="advantage-title">
-                                PREPARATION
-                            </div>
-                            <div class="advantage-text">
-                                Preparation and equipment check on site
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="anchor-services" class="services">
-    <div class="wrapper-services">
-        <div class="services-title">
-            <h2>COST OF OUR SERVICES</h2>
-        </div>
-        <div class="services-squares">
-            <div class="spb">
-                <div class="first-square-line">
-                    Within Saint Petersburg
-                </div>
-                <div class="second-square-line" >
-                    from 70 thousand rubles
-                </div>
-            </div>
-            <div class="out-spb">
-                <div class="first-square-line">
-                    Outside Saint Petersburg
-                </div>
-                <div class="second-square-line">
-                    from 70 thousand rubles + travel expenses
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div id="anchor-between"></div>
-<section id="anchor-contacts" class="want-work">
-    <div class="wrapper-call">
-        <div class="want-work-title">
-            <h2 id="anchor-for-popup">WANT TO WORK WITH US?</h2>
-        </div>
-        <div class="want-work-subtitle">
-            <div class="first-line-sub">
-                <h3>Sign up for any convenient day</h3>
-            </div>
-            <div class="second-line-sub">
-                <h3>We will <strong><b>contact</b></strong> you</h3>
-            </div>
-        </div>
-        <div id="popup">
-            <form id="myForm">
-                <div class="requestform-content">
-                    <div id="requestform-div" class="requestform-div">
-                        <div class="requestform-element">
-                            <div class="requestform-content-name">
-                                <h5>Name</h5>
-                            </div>
-                            <div class="requestform-content-field">
-                                <input class="requestform-content-field-input" type="text" id="requestname" name="name" required>
-                            </div>
-                        </div>
-                        <div class="requestform-element">
-                            <div class="requestform-content-name">
-                                <h5>Phone Number</h5>
-                            </div>
-                            <div class="requestform-content-field">
-                                <input class="requestform-content-field-input" type="tel" id="requestphone" name="phone" required>
-                            </div>
-                        </div>
-                        <div class="requestform-element">
-                            <div class="requestform-content-name" required>
-                                <h5>Event Location</h5>
-                            </div>
-                            <div class="requestform-content-field">
-                                <input class="requestform-content-field-input" type="text" id="requestlocation" name="location" required>
-                            </div>
-                        </div>
-                        <div class="requestform-element">
-                            <div class="requestform-content-name" required>
-                                <h5>Date</h5>
-                            </div>
-                            <div class="requestform-content-field">
-                                <input class="requestform-content-field-input" type="date" id="requestdate" name="date" required>
-                            </div>
-                        </div>
-                        <button onclick="submitForm()" type="submit" id="requestform-submit" class="requestform-element">SUBMIT</button>>
-                        <script>
-                            let requestButton = document.getElementById('requestform-submit')
-                            requestButton.addEventListener('click', function(){
-                                for(let i = 0; i < 50; i++){
-
-                                    let spark = document.createElement('i');
-                                    spark.classList.add('spark');
-
-                                    const randomX = (Math.random() - 0.5) * window.innerWidth;
-                                    const randomY = (Math.random() - 0.5) * window.innerHeight;
-
-                                    spark.style.setProperty('--x', randomX + 'px');
-                                    spark.style.setProperty('--y', randomY + 'px');
-
-
-                                    // Рандомный размер для spark
-                                    const randomSize = Math.random() * 8 + 2;
-                                    spark.style.width = randomSize + 'px';
-                                    spark.style.height = randomSize + 'px';
-
-                                    const duration = Math.random() * 2 + 0.5;
-
-                                    spark.style.animation = 'animate ${duration}s ease-out forwards';
-
-                                    document.body.appendChild(spark);
-
-                                    setTimeout(function(){
-                                        spark.remove();
-                                    }, 2000);
-                                }
-                            })
-                        </script>
-                    </div>
-                </div>
-                
-            </form>
-        </div>
-        <div class="order-call">
-            <button id="toggle-popup" onclick="showPopup()" class="order-button">ORDER US</button>
-        </div> 
-
-    </div>
-</section>
-<section class="call-section">
-    <div class="wrapper-call-yourself">
-        <div class="call-yourself-title">
-            <h2>DON'T WANT TO WAIT FOR A CALL?</h2>
-        </div>
-
-        <div class="call-yourself-main">
-            <div class="call-yourself-back-photo">
-                <div class="call-yourself-text">
-                    <h3>YOU CAN CALL US AT ANY TIME CONVENIENT FOR YOU.</h3>
-                    <br>
-                    <h3>OUR MANAGER WILL TRY TO HELP YOU!</h3>
-                </div>
-                <div class="call-yourself-line">
-                    <picture>
-                        <source srcset="../data/851-1160/Line.png" media="(min-width: 851px) and (max-width:1160px)" />
-                        <source srcset="../data/601-850/Line.png" media="(min-width: 601px) and (max-width:850px)" />
-                        <source srcset="../data/480-600/420-call-line.png" media="(min-width: 480px) and (max-width:600px)" />
-                        <source srcset="../data/mobile-line.png" media="(min-width: 360px) and (max-width:479px)" />
-                        <img src="../data/Line-call.png" alt="Call Line" />
-                    </picture>
-                </div>
-
-                <div class="call-yourself-phone">
-                    <a href="tel:+79506644220">+7-950-664-4220</a>
-                </div>
-
-                <div class="call-yourself-photo">
-                
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="reviews">
-    <div class="wrapper-reviews">
-        <div class="reviews-title">
-            <h2>OUR CLIENTS' REVIEWS</h2>
-        </div>
-        <div class="reviews-photos">
-            <img src="../data/reviews/5.jpg" class="review-photo review-photo-5" alt="Review 5">
-            <img src="../data/reviews/2.jpg" class="review-photo review-photo-2" alt="Review 2">
-            <img src="../data/reviews/3.jpg" class="review-photo review-photo-3" alt="Review 3">
-            <img src="../data/reviews/4.jpg" class="review-photo review-photo-4" alt="Review 4">
-            <img src="../data/reviews/1.jpg" class="review-photo review-photo-1" alt="Review 1">
-            <img src="../data/reviews/6.jpg" class="review-photo review-photo-6" alt="Review 6">
-        </div>
-    </div>
-</section>
-
-</main>
-<section class="any-questions">
-    <form>
-        <div class="wrapper-questions">
-            
-            <div class="questions-title"><h2>STILL HAVE QUESTIONS?</h2></div>
-            
-            <div class="questions-form">
-                <div class="form-title"><h3>Leave a Request</h3></div>
-                <br>
-                <div class="contact-container">
-                    
-                    <div class="form-phone">
-                        <input id="phoneNumber" name="phoneNumber" type="tel" class="input-phone" placeholder="&#128222; Phone Number">
-                    </div>
-                    
-                    <div class="send-form">
-                        <button id="contact-button" onclick="submitPhone(event)" class="contact-button" disabled>CONTACT US</button>
-                        <script>
-                            let contactButton = document.getElementById('contact-button')
-                            contactButton.addEventListener('click', function(){
-                                for(let i = 0; i < 50; i++){
-
-                                    let spark = document.createElement('i');
-                                    spark.classList.add('spark');
-
-                                    const randomX = (Math.random() - 0.5) * window.innerWidth;
-                                    const randomY = (Math.random() - 0.5) * window.innerHeight;
-
-                                    spark.style.setProperty('--x', randomX + 'px');
-                                    spark.style.setProperty('--y', randomY + 'px');
-
-
-                                    // Random size for spark
-                                    const randomSize = Math.random() * 8 + 2;
-                                    spark.style.width = randomSize + 'px';
-                                    spark.style.height = randomSize + 'px';
-
-                                    const duration = Math.random() * 2 + 0.5;
-
-                                    spark.style.animation = `animate ${duration}s ease-out forwards`;
-
-                                    document.body.appendChild(spark);
-
-                                    setTimeout(function(){
-                                        spark.remove();
-                                    }, 2000);
-                                }
-                            })
-                        </script>
-                    </div>
-                    
-                </div>   
-                <br><br>
-                <div class="agreement-checkbox-text">
-                    <input id="agrcheckbox" class="agreement-checkbox" type="checkbox" required/>
-                    
-                    <div class="agreement-text">
-                        <label for="agrcheckbox" style="cursor: pointer;">By clicking the button, you agree to the <a id="agrlink" onclick="openModal()"><u>terms of personal data processing</u></a></label>
-                    </div>
+            <div class="header-wrapper">
+                <div class="header-ava">
+                    <a href="#"><img src="../data/ava.png" alt="ID AHO Logo"></a>
+                </div> 
+                <nav id="nav" class="nav">
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="#" onclick="scrollToSection('#anchor-description')" class="header-link">ABOUT US</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" onclick="scrollToSection('#anchor-about-us')" class="header-link">OUR BAND</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" onclick="scrollToSection('#anchor-repertuar')" class="header-link">REPERTOIRE</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" onclick="scrollToSection('#anchor-video')" class="header-link">VIDEO</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" onclick="scrollToSection('#anchor-services')" class="header-link">SERVICES</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" onclick="scrollToSection('#anchor-between')" class="header-link">CONTACT US</a>
+                        </li>
+                        <button id="flag-button" class="flag-button">
+                            <img id="flag-icon" src="/data/great-britain-flag.png" alt="English Flag">
+                        </button>
+                        <script src="/js/languages.js"></script>  
+                    </ul>
+                    <button id="nav-button" class="nav-button"><img id="nav-button-image" src="../data/catalog-mb.png" alt="Menu"></button>
                     <script>
-                        document.getElementById('agrcheckbox').addEventListener('change', function() {
-                            let submitButton = document.getElementById('contact-button');
-                            submitButton.disabled = !this.checked;
-                            submitButton.addEventListener('click', function() {
-                                if (this.disabled) {
-                                    alert('You did not check the box');
-                                }
-                            });
+                        document.getElementById("nav-button").addEventListener("click", (e) => {
+                            let nav = document.getElementById("nav"); 
+                            let button = document.getElementById("nav-button-image")
+                            if (nav.classList.contains('open')) {
+                                nav.classList.remove("open");
+                                button.src = "../data/catalog-mb.png";
+                            } else {
+                                nav.classList.add("open");
+                                button.src = "../data/nav-close.svg";
+                            }
                         });
                     </script>
-                </div>
+                </nav>
             </div>
         </div>
-    </form>
-</section>
-<script>
-    document.getElementById('text-to-click').addEventListener('click', function() {
-    document.getElementById('agrcheckbox').checked = !document.getElementById('agrcheckbox').checked;
-});
-</script>
+    </header>
 
-<script src="https://unpkg.com/imask"></script>
-<script>
-    const element1 = document.getElementById('phoneNumber');
-    const element2 = document.getElementById('requestphone');
-    const maskOptions = {
-    mask: '+{7} (000) 000-00-00'
-    };
-    const mask1 = IMask(element1, maskOptions);
-    const mask2 = IMask(element2, maskOptions);
-</script>
-<footer>
-    <section class="info">
-        <div class="info-container">
-            <div class="managers">
-                <div class="first-manager">
-                    <div class="manager">
-                        GROUP MANAGER:
-                        PHONE:
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper">
+                <div class="intro-title">
+                    <h1>ID AHO</h1>
+                </div>
+                <p class="intro-subtitle">
+                    Musical Cover Band
+                </p>
+            </div>
+        </section>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+            </button>
+            <ul class="image-list">
+                <img class="image-item" src="../data/slider/11.png" alt="img-11" />
+                <img class="image-item" src="../data/slider/17.jpg" alt="img-17" />
+                <img class="image-item" src="../data/slider/2.jpg" alt="img-2" />
+                <img class="image-item" src="../data/slider/14.jpg" alt="img-14" />
+                <img class="image-item" src="../data/slider/6.jpg" alt="img-6" />
+                <img class="image-item" src="../data/slider/9.png" alt="img-9" />
+                <img class="image-item" src="../data/slider/4.jpg" alt="img-4" />
+                <img class="image-item" src="../data/slider/5.jpg" alt="img-5" />
+                <img class="image-item" src="../data/slider/18.jpg" alt="img-18" />
+                <img class="image-item" src="../data/slider/10.png" alt="img-10" />
+                <img class="image-item" src="../data/slider/7.png" alt="img-7" />
+                <img class="image-item" src="../data/slider/16.jpg" alt="img-16" />
+                <img class="image-item" src="../data/slider/8.png" alt="img-8" />
+                <img class="image-item" src="../data/slider/3.jpg" alt="img-3" />
+                <img class="image-item" src="../data/slider/1.jpg" alt="img-1" />
+                <img class="image-item" src="../data/slider/12.png" alt="img-12" />
+                <img class="image-item" src="../data/slider/13.png" alt="img-13" />
+                <img class="image-item" src="../data/slider/15.jpg" alt="img-15" />
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+            </button>
+            </div>
+            <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
+            </div>
+        </div>
+        <section id="anchor-description" class="description">
+            <div class="wrapper-full">
+                <div class="title-wrapper">
+                    <div class="description-photo">
+                        <img src="../data/music_desc.png">
                     </div>
-                    <div class="contact">
-                        Evgeny Andreevich
+                    <h2 class="description-title">WHY CHOOSE US?</h2>
+                </div>
+        
+                <div class="description-bio-text">
+                    <h3>
+                        <p>Professional, responsible, bright, and fun - that's us!
+                        <p>You won't be able to take your eyes off us.</p>
+                        We will create an atmosphere that will make everyone dance and sing along with us.</p>
                         <br>
-                        <a href="tel:+79522357852">+7-952-235-7852</a>
+                        <p>We guarantee that you will never forget this day and you will have unforgettable impressions!</p>
+                        <br>
+                        <p>Cover band ID AHO is the perfect choice for any of your events.</p>
+                    </h3>
+                </div>
+                <div class="desc-photos">
+                    <div class="front-desc-photo">
+                        <img src="../data/exp.png">
+                    </div>
+                    <div class="back-desc-photo">
+                        <img src="../data/back-desk-photo.png">
                     </div>
                 </div>
-
-                <div class="second-manager">
-                    <div class="manager">
-                        GROUP MANAGER:
-                        PHONE:
+        
+                <div class="desc-information">
+                    <div class="info-items-first-line">
+                        <div class="info-item info-item-1">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
+                            <h3>ID AHO</h3>
+                        </div>
+                        <div class="info-item info-item-2">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
+                            <h3>Founded: 2020</h3>
+                        </div>
                     </div>
-                    <div class="contact">
-                        Polina Vadimovna
-                        <br>
-                        <a href="tel:+79506644220">+7-950-664-4220</a>
+                    <div class="info-items-second-line">
+                        <div class="info-item info-item-1">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
+                            <h3>Repertoire: Pop-Rock</h3>
+                        </div>
+                        <div class="info-item info-item-2">
+                            <img class="info-photo" src="../data/desc-info-photo.png">
+                            <h3>Saint Petersburg</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="social-medias">
-                <a href="https://t.me/id_aho_music" target="_blank"><img src="../data/socials/tg.png"></a>
-                <a href="https://vk.com/id__aho" target="_blank"><img src="../data/socials/vk.png"></a>
-                <a href="https://www.instagram.com/id__aho?igsh=MXc0NHdoNHlzengxbg==&utm_source=qr" target="_blank"><img src="../data/socials/inst.png"></a>
-                <a href="https://youtube.com/@ID_AHOspb?si=TdII6m5eVkYROEsf" target="_blank"><img src="../data/socials/youtube.png"></a>
+        </section>
+        <section class="group-structure">
+            <div id="anchor-about-us" class="wrapper-full">
+                <div class="group-title">
+                    <div class="description-photo">
+                        <img src="../data/music_desc.png">
+                    </div>
+                    <h2>GROUP MEMBERS</h2>
+                </div>
+        
+                <div class="group-members">
+                    <div id="gm1" class="group-member group-member-1">
+                        <img src="../data/sostav/first.png">
+                        <div class="group-text">
+                            <div class="f-l-text">
+                                <h3>Aleksei</h3>
+                            </div>
+                            <div class="s-l-text">
+                                <h4>Vocalist</h4>
+                            </div>
+                        </div>
+        
+                        <div id="ms1" class="mask">
+                            <h2>
+                                Aleksei
+                            </h2>
+                            <p>
+                                Will captivate anyone from the first minute with his extraordinary dances, fiery charisma, rocker jumps, and excellent voice.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div id="gm2" class="group-member group-member-2">
+                        <img src="../data/sostav/second.png">
+                        <div class="group-text">
+                            <div class="f-l-text">
+                                <h3>Evgeniy</h3>
+                            </div>
+                            <div class="s-l-text">
+                                <h4>Drummer</h4>
+                            </div>
+                        </div>
+        
+                        <div id="ms2" class="mask">
+                            <h2>
+                                Evgeniy
+                            </h2>
+                            <p>
+                                The crush of all the girls, possibly even the guys. The most stylish and energetic drummer in Saint Petersburg.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div id="gm3" class="group-member group-member-3">
+                        <img src="../data/sostav/third.png">
+                        <div class="group-text">
+                            <div class="f-l-text">
+                                <h3>Roman</h3>
+                            </div>
+                            <div class="s-l-text">
+                                <h4>Bass Guitar</h4>
+                            </div>
+                        </div>
+        
+                        <div id="ms3" class="mask">
+                            <h2>
+                                Roman
+                            </h2>
+                            <p>
+                                You will forget what it's like when the "bass isn't heard." Will dazzle with the kindest smile on Earth.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div id="gm4" class="group-member group-member-4">
+                        <img src="../data/sostav/fourth.png">
+                        <div class="group-text">
+                            <div class="f-l-text">
+                                <h3>Maksim</h3>
+                            </div>
+                            <div class="s-l-text">
+                                <h4 id="anchor-repertuar">Lead Guitar</h4>
+                            </div>
+                        </div>
+        
+                        <div id="ms4" class="mask">
+                            <h2>
+                                Maksim
+                            </h2>
+                            <p>
+                                At first glance, a modest guy, but just watch him play and it gets very hot!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.getElementById("gm1").addEventListener("mouseover", (e) => {
+                document.getElementById("ms1").style.opacity = 1;
+            })
+            document.getElementById("gm1").addEventListener("mouseout", (e) => {
+                document.getElementById("ms1").style.opacity = 0;
+            })
+            document.getElementById("gm2").addEventListener("mouseover", (e) => {
+                document.getElementById("ms2").style.opacity = 1;
+            })
+            document.getElementById("gm2").addEventListener("mouseout", (e) => {
+                document.getElementById("ms2").style.opacity = 0;
+            })
+            document.getElementById("gm3").addEventListener("mouseover", (e) => {
+                document.getElementById("ms3").style.opacity = 1;
+            })
+            document.getElementById("gm3").addEventListener("mouseout", (e) => {
+                document.getElementById("ms3").style.opacity = 0;
+            })
+            document.getElementById("gm4").addEventListener("mouseover", (e) => {
+                document.getElementById("ms4").style.opacity = 1;
+            })
+            document.getElementById("gm4").addEventListener("mouseout", (e) => {
+                document.getElementById("ms4").style.opacity = 0;
+            })
+        </script>
+    <section class="repertuar">
+        <div class="wrapper-repertuar">
+            <div class="repertuar-title">
+                <div class="description-photo">
+                    <img src="../data/music_desc.png">
+                </div>
+                <h2>REPERTOIRE</h2>
             </div>
 
-            <div class="label">
-                ©  2024 ID Aho
+            <div class="music-list">
+                <div class="circle">
+                    <picture>
+                        <source srcset="../data/851-1160/circle-851.png" media="(min-width: 851px) and (max-width:1160px)" />
+                        <img src="../data/circle-image.png">
+                    </picture>
+                </div>
+                <div class="square">
+                    <ul class="music-items">
+                        <span class="square-title">
+                            Our repertoire includes works by both Russian and international authors
+                        </span>
+                        <div class="scrollmenu">
+                            <br>
+                            Amiga – Letet
+                            <br>
+                            Artur Pirozhkov – Alkogolichka
+                            <br>
+                            Artur Pirozhkov – Zatsepilа
+                            <br>
+                            Andrey Gubin – Noch
+                            <br>
+                            Andrey Gubin – Devushki kak zvezdy
+                            <br>
+                            Andrey Gubin – Zima-kholoda
+                            <br>
+                            Aljans – Na zare
+                            <br>
+                            Bi-2 – Polkovnik
+                            <br>
+                            Bi-2 – Varvara
+                            <br>
+                            Basta – Sansara
+                            <br>
+                            Basta – Medlyachok
+                            <br>
+                            Bon Jovi – It’s my life
+                            <br>
+                            Boombox – Vakhtyoram
+                            <br>
+                            Vanila Sky (cover) - Zvenit yanvarskaya vyuga
+                            <br>
+                            Valentin Strykalo – Nashe leto
+                            <br>
+                            Valeriy Meladze – Tequila-Lyubov
+                            <br>
+                            Valeriy Meladze – Krasivo
+                            <br>
+                            Vanya Dmitrienko – Venera-Yupiter
+                            <br>
+                            Vaenga – Kuryu
+                            <br>
+                            Grazhdanskaya Oborona – Vsyo idyot po planu
+                            <br>
+                            Gradusy – Rezhissyor
+                            <br>
+                            Galibri & Mavik – Federiko Fellini
+                            <br>
+                            Dabro – Yunost
+                            <br>
+                            Jony – Kometa
+                            <br>
+                            Zhuki – Batareika
+                            <br>
+                            Zemlyane – Trava u doma
+                            <br>
+                            Zveri – Bryunetki i blondinki
+                            <br>
+                            Zveri – Do skoroy vstrechi
+                            <br>
+                            Zveri – Prosto takaya silnaya lyubov
+                            <br>
+                            Zveri – Dozhdi-pistolety
+                            <br>
+                            Zveri – Vsyo, chto tebya kasaetsa
+                            <br>
+                            Zveri – Rayony-kvartaly
+                            <br>
+                            Zveri – Dlya tebya
+                            <br>
+                            Zveri – Kapkany
+                            <br>
+                            Zveri – Tantsuy
+                            <br>
+                            Zveri – Napitki pokrepche
+                            <br>
+                            Zivert – Zelyonyye volny
+                            <br>
+                            Ivanushki International – Topoliny pukh
+                            <br>
+                            Irina Allegrova – Ugonshchitsa
+                            <br>
+                            KiSh – Durak i molniya
+                            <br>
+                            KiSh – Lesnik
+                            <br>
+                            KiSh – Kamnem po golove
+                            <br>
+                            KiSh – Prygnu so skaly
+                            <br>
+                            KiSh – Eli myaso muzhiki
+                            <br>
+                            KiSh – Kukla kolduna
+                            <br>
+                            KiSh – Proklyaty stary dom
+                            <br>
+                            KiSh – Severny flot
+                            <br>
+                            Kino – Videli noch
+                            <br>
+                            Kino – Peremen
+                            <br>
+                            Kino – Gruppa krovi
+                            <br>
+                            Kino – Kogda tvoya devushka bolna
+                            <br>
+                            Cream Soda, Khleb – Plachu na tekhno
+                            <br>
+                            Lyapis Trubetskoy – Au
+                            <br>
+                            Lyapis Trubetskoy – Yevpatoriya
+                            <br>
+                            Lyapis Trubetskoy – Kapital
+                            <br>
+                            Leprikonsy – Khali-gali
+                            <br>
+                            Leningrad – WWW
+                            <br>
+                            Leningrad – Ryba
+                            <br>
+                            Leningrad – V Pitere Pit
+                            <br>
+                            Lyusya Chebotina – Solntse Monako
+                            <br>
+                            Leonid Agutin – Khop-khey lala ley
+                            <br>
+                            Max Korzh – Nebo pomozhet nam
+                            <br>
+                            Max Korzh – Zhit v kayf
+                            <br>
+                            Mikhail Boyarskiy – Zelenoglazoye taksi
+                            <br>
+                            Miyagi & Endshpil feat. Rem Digga – I Got Love
+                            <br>
+                            MakSim – Znayesh li ty
+                            <br>
+                            Murat Nasyrov – Ya eto ty
+                            <br>
+                            Mumiy Troll – Medveditsa
+                            <br>
+                            Mumiy Troll – Vladivostok
+                            <br>
+                            MONATIK – Kruzhit
+                            <br>
+                            Max Barskih – Nezemnaya
+                            <br>
+                            Mr. President – Coco Jamboo
+                            <br>
+                            Moya Mishel – Zima v serdtse
+                            <br>
+                            Mirazh – Novy geroi
+                            <br>
+                            Mr. Credo – Medlyak
+                            <br>
+                            NILETTO – Lyubimka
+                            <br>
+                            Nervy – Batarei
+                            <br>
+                            Noize MC – Ustroy destroy
+                            <br>
+                            Otpetye Moshenniki – Lyubi menya lyubi
+                            <br>
+                            Pornofilmy – Ya tak soskuchilsya
+                            <br>
+                            Ruki Vverkh – 18 mne uzhe
+                            <br>
+                            Ruki Vverkh – On tebya tseluet
+                            <br>
+                            Ruki Vverkh – Alyosha
+                            <br>
+                            Ruki Vverkh – Chuzhiye guby
+                            <br>
+                            Ruki Vverkh – Ay yay yay
+                            <br>
+                            Rock-Ostrovа – Nichego ne govori
+                            <br>
+                            Smyslovyye Gallyutsinatsii – Vechno molodoy
+                            <br>
+                            Sultan Laguchev – Gorkiy vkus
+                            <br>
+                            Splin – Vykhoda net
+                            <br>
+                            Splin – Moyе serdtse
+                            <br>
+                            Sektor Gaza – 30 let
+                            <br>
+                            Sektor Gaza – Pora domoy
+                            <br>
+                            Tantsy Minus – Gorod skazka
+                            <br>
+                            Tantsy Minus – Polovinka
+                            <br>
+                            Tima Belorusskikh – Nezabudka
+                            <br>
+                            Feduk, Eldzhey – Rozovoye vino
+                            <br>
+                            Khabib – Yagoda Malinka
+                            <br>
+                            Hi-Fi – Sedmoy lepestok
+                            <br>
+                            Hi-Fi – Ne dano
+                            <br>
+                            Shura – Ty ne ver slezam
+                            <br>
+                            Yuriy Antonov – Mechta sbivayetsa
+                            <br>
+                            Yuriy Shatunov – Belye rozy
+                            <br>
+                            Yuriy Shatunov – Sedaya noch
+                            <br>
+                            Yaroslav Yevdokimov – Fantazyor
+                            <span class="red-text-songs">
+                                <br>
+                                <br>
+                                Works by ID AHO:
+                                <br>
+                                <br>
+                            </span>
+                            ID AHO – Zakroy glaza
+                            <br>
+                            ID AHO – Flyuger
+                            <br>
+                            ID AHO – Letat
+                            <br>
+                            ID AHO – Novaya
+                            <br>
+                            ID AHO – Abyuzer
+                            <br>
+                            ID AHO – V zakat
+                            <br>
+                            ID AHO – Gori
+                            <br>
+                            ID AHO – Gde byl by ya
+                            <br>
+                            ID AHO – Skazhi zachem
+                            <br>
+                            ID AHO – Nevozmozhno vernut
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-</footer>
+    <section id="anchor-video" class="promo-section">
+        <div class="wrapper-promo">
+            <div class="promo-video-title">
+                <h2>Promo Video</h2>
+            </div>
+            <div class="promo-video">
+                <iframe src="https://www.youtube.com/embed/BImuzR9kkRk?si=obcNzJ6WEUK-xAYQ" title="ID Aho promo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="cooperation-stages">
+        <div class="wrapper-stages">
+            <div class="stages-title">
+                COOPERATION STAGES
+            </div>
+            <div class="stages">
+                <div class="advantages">
+                    <div class="advantages-f-l">
+                        <div class="advantage adv1">
+                            <div class="advantage-title">
+                                DETAILS
+                            </div>
+                            <div class="advantage-text">
+                                <p class="txt">Discussion of rider, repertoire, and other important details</p>
+                            </div>
+                        </div>
+                        <div class="advantage adv2">
+                            <div class="advantage-title">
+                                OUR PERFORMANCE
+                            </div>
+                            <div class="advantage-text">
+                                <p class="txt">We give you unforgettable emotions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stages-photo">
+                        <img src="../data/timeline.png" alt="timeline">
+                    </div>
+                    <div class="advantages-s-l">
+                        <div class="adv3">
+                            <div class="advantage">
+                                <div class="advantage-title">
+                                    APPLICATION
+                                </div>
+                                <div class="advantage-text">
+                                    <p class="txt">Submit an application and our manager will contact you</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adv4">
+                            <div class="advantage adv4">
+                                <div class="advantage-title">
+                                    PREPARATION
+                                </div>
+                                <div class="advantage-text">
+                                    Preparation and equipment check on site
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="anchor-services" class="services">
+        <div class="wrapper-services">
+            <div class="services-title">
+                <h2>COST OF OUR SERVICES</h2>
+            </div>
+            <div class="services-squares">
+                <div class="spb">
+                    <div class="first-square-line">
+                        Within Saint Petersburg
+                    </div>
+                    <div class="second-square-line" >
+                        from 70 thousand rubles
+                    </div>
+                </div>
+                <div class="out-spb">
+                    <div class="first-square-line">
+                        Outside Saint Petersburg
+                    </div>
+                    <div class="second-square-line">
+                        from 70 thousand rubles + travel expenses
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="anchor-between"></div>
+    <section id="anchor-contacts" class="want-work">
+        <div class="wrapper-call">
+            <div class="want-work-title">
+                <h2 id="anchor-for-popup">WANT TO WORK WITH US?</h2>
+            </div>
+            <div class="want-work-subtitle">
+                <div class="first-line-sub">
+                    <h3>Sign up for any convenient day</h3>
+                </div>
+                <div class="second-line-sub">
+                    <h3>We will <strong><b>contact</b></strong> you</h3>
+                </div>
+            </div>
+            <div id="popup">
+                <form id="myForm">
+                    <div class="requestform-content">
+                        <div id="requestform-div" class="requestform-div">
+                            <div class="requestform-element">
+                                <div class="requestform-content-name">
+                                    <h5>Name</h5>
+                                </div>
+                                <div class="requestform-content-field">
+                                    <input class="requestform-content-field-input" type="text" id="requestname" name="name" required>
+                                </div>
+                            </div>
+                            <div class="requestform-element">
+                                <div class="requestform-content-name">
+                                    <h5>Phone Number</h5>
+                                </div>
+                                <div class="requestform-content-field">
+                                    <input class="requestform-content-field-input" type="tel" id="requestphone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="requestform-element">
+                                <div class="requestform-content-name" required>
+                                    <h5>Event Location</h5>
+                                </div>
+                                <div class="requestform-content-field">
+                                    <input class="requestform-content-field-input" type="text" id="requestlocation" name="location" required>
+                                </div>
+                            </div>
+                            <div class="requestform-element">
+                                <div class="requestform-content-name" required>
+                                    <h5>Date</h5>
+                                </div>
+                                <div class="requestform-content-field">
+                                    <input class="requestform-content-field-input" type="date" id="requestdate" name="date" required>
+                                </div>
+                            </div>
+                            <button onclick="sendMail();" type="submit" id="requestform-submit" class="requestform-element">SUBMIT</button>>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="order-call">
+                <button id="toggle-popup" onclick="showPopup()" class="order-button">ORDER US</button>
+            </div> 
+
+        </div>
+    </section>
+    <section class="call-section">
+        <div class="wrapper-call-yourself">
+            <div class="call-yourself-title">
+                <h2>DON'T WANT TO WAIT FOR A CALL?</h2>
+            </div>
+
+            <div class="call-yourself-main">
+                <div class="call-yourself-back-photo">
+                    <div class="call-yourself-text">
+                        <h3>YOU CAN CALL US AT ANY TIME CONVENIENT FOR YOU.</h3>
+                        <br>
+                        <h3>OUR MANAGER WILL TRY TO HELP YOU!</h3>
+                    </div>
+                    <div class="call-yourself-line">
+                        <picture>
+                            <source srcset="../data/851-1160/Line.png" media="(min-width: 851px) and (max-width:1160px)" />
+                            <source srcset="../data/601-850/Line.png" media="(min-width: 601px) and (max-width:850px)" />
+                            <source srcset="../data/480-600/420-call-line.png" media="(min-width: 480px) and (max-width:600px)" />
+                            <source srcset="../data/mobile-line.png" media="(min-width: 360px) and (max-width:479px)" />
+                            <img src="../data/Line-call.png" alt="Call Line" />
+                        </picture>
+                    </div>
+
+                    <div class="call-yourself-phone">
+                        <a href="tel:+79506644220">+7-950-664-4220</a>
+                    </div>
+
+                    <div class="call-yourself-photo">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="wrapper-reviews">
+            <div class="reviews-title">
+                <h2>OUR CLIENTS' REVIEWS</h2>
+            </div>
+            <div class="reviews-photos">
+                <img src="../data/reviews/5.jpg" class="review-photo review-photo-5" alt="Review 5">
+                <img src="../data/reviews/2.jpg" class="review-photo review-photo-2" alt="Review 2">
+                <img src="../data/reviews/3.jpg" class="review-photo review-photo-3" alt="Review 3">
+                <img src="../data/reviews/4.jpg" class="review-photo review-photo-4" alt="Review 4">
+                <img src="../data/reviews/1.jpg" class="review-photo review-photo-1" alt="Review 1">
+                <img src="../data/reviews/6.jpg" class="review-photo review-photo-6" alt="Review 6">
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <section class="any-questions">
+        <form>
+            <div class="wrapper-questions">
+                
+                <div class="questions-title"><h2>STILL HAVE QUESTIONS?</h2></div>
+                
+                <div class="questions-form">
+                    <div class="form-title"><h3>Leave a Request</h3></div>
+                    <br>
+                    <div class="contact-container">
+                        
+                        <div class="form-phone">
+                            <input id="phoneNumber" name="phoneNumber" type="tel" class="input-phone" placeholder="&#128222; Phone Number">
+                        </div>
+                        
+                        <div class="send-form">
+                            <button id="contact-button" onclick="sendPhone();" class="contact-button" disabled>CONTACT US</button>
+                        </div>
+                        
+                    </div>   
+                    <br><br>
+                    <div class="agreement-checkbox-text">
+                        <input id="agrcheckbox" class="agreement-checkbox" type="checkbox" required/>
+                        
+                        <div class="agreement-text">
+                            <label for="agrcheckbox" style="cursor: pointer;">By clicking the button, you agree to the <a id="agrlink" onclick="openModal()"><u>terms of personal data processing</u></a></label>
+                        </div>
+                        <script>
+                            document.getElementById('agrcheckbox').addEventListener('change', function() {
+                                let submitButton = document.getElementById('contact-button');
+                                submitButton.disabled = !this.checked;
+                                submitButton.addEventListener('click', function() {
+                                    if (this.disabled) {
+                                        alert('You did not check the box');
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script>
+        document.getElementById('text-to-click').addEventListener('click', function() {
+        document.getElementById('agrcheckbox').checked = !document.getElementById('agrcheckbox').checked;
+    });
+    </script>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        const element1 = document.getElementById('phoneNumber');
+        const element2 = document.getElementById('requestphone');
+        const maskOptions = {
+        mask: '+{7} (000) 000-00-00'
+        };
+        const mask1 = IMask(element1, maskOptions);
+        const mask2 = IMask(element2, maskOptions);
+    </script>
+    <footer>
+        <section class="info">
+            <div class="info-container">
+                <div class="managers">
+                    <div class="first-manager">
+                        <div class="manager">
+                            GROUP MANAGER:
+                            PHONE:
+                        </div>
+                        <div class="contact">
+                            Evgeny Andreevich
+                            <br>
+                            <a href="tel:+79522357852">+7-952-235-7852</a>
+                        </div>
+                    </div>
+
+                    <div class="second-manager">
+                        <div class="manager">
+                            GROUP MANAGER:
+                            PHONE:
+                        </div>
+                        <div class="contact">
+                            Polina Vadimovna
+                            <br>
+                            <a href="tel:+79506644220">+7-950-664-4220</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-medias">
+                    <a href="https://t.me/id_aho_music" target="_blank"><img src="../data/socials/tg.png"></a>
+                    <a href="https://vk.com/id__aho" target="_blank"><img src="../data/socials/vk.png"></a>
+                    <a href="https://www.instagram.com/id__aho?igsh=MXc0NHdoNHlzengxbg==&utm_source=qr" target="_blank"><img src="../data/socials/inst.png"></a>
+                    <a href="https://youtube.com/@ID_AHOspb?si=TdII6m5eVkYROEsf" target="_blank"><img src="../data/socials/youtube.png"></a>
+                </div>
+
+                <div class="label">
+                    ©  2024 ID Aho
+                </div>
+            </div>
+        </section>
+    </footer>
 <div id="agreement-modal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>

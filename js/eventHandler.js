@@ -191,6 +191,7 @@ function showPopup() {
     document.getElementById("popup").style.display = 'grid';
     document.getElementById('header').style.display = 'none';
     document.getElementById('toggle-popup').style.display = 'none';
+    console.log('no-scr')
 }
 function closePopup() {
     scrollToSection('#anchor-between');
@@ -198,6 +199,7 @@ function closePopup() {
     document.getElementById('popup').style.display = 'none';
     document.getElementById('header').style.display = '';
     document.getElementById('toggle-popup').style.display = '';
+    console.log('scr')
 }
 
 window.onclick = function(event) {

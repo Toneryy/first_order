@@ -43,7 +43,6 @@ function sendMail() {
     } else {
         alert("Слишком много запросов. Подождите...");
     }
-s
 }
 
 function sendPhone() {
