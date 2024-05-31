@@ -1,6 +1,3 @@
-
-
-
 window.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelectorAll('.video');
 
@@ -208,3 +205,4 @@ window.onclick = function(event) {
         }
     }
 }
+

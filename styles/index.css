@@ -1425,6 +1425,14 @@ body {
     margin: 0 auto;
 }
 
+.requestform-content-field-input {
+    position: relative;
+}
+
+#requestdate::-webkit-calendar-picker-indicator {
+    padding-left: 100%;
+    position: absolute;
+}
 
 
 .cond-title {
