@@ -6,11 +6,14 @@ function sendMail() {
 
     let now = new Date().getTime();
     const then = localStorage.getItem("previous-full-request-time");
+    var name = document.getElementById('requestname').value;
     var phone = document.getElementById('requestphone').value;
+    var location = document.getElementById('requestlocation').value;
+    var date = document.getElementById('requestdate').value;
     // milliseconds
     const timeout = 5 * 60_000;
     if (then == null || Number(then) + timeout < now) {
-        if (validatePhone(phone) == true) {
+        if (validatePhone(phone) == true && validateName(name) == true) {
             localStorage.setItem("previous-full-request-time", now)
             var params =  {
                 name: document.getElementById('requestname').value,
@@ -29,12 +32,18 @@ function sendMail() {
                 console.error('Ошибка:', error);
             });;
             closePopup();
-        } else {
-            alert("Некорректный номер телефона")
+        } 
+        if (validateName(name) == false) {
+            alert('Некорректное имя');
+        }
+        
+        if (validatePhone(phone) == false) {
+            alert("Некорректный номер телефона");
         }
     } else {
-        alert("Слишком много запросов. Подождите...")
+        alert("Слишком много запросов. Подождите...");
     }
+s
 }
 
 function sendPhone() {
@@ -54,10 +63,15 @@ function sendPhone() {
             emailjs.send("service_ibt0yqx", "template_1vujh09", params)
             .then(document.getElementById('phoneNumber').value = '')
             .then(response => response.json())
+            .then(alert("Письмо успешно отправлено!"))
             .catch(error => {
                 console.error('Ошибка:', error);
             });;
             closePopup();
-        } 
-    } 
+        } else {
+            alert("Некорректный номер телефона");
+        }
+    } else {
+        alert("Слишком много запросов. Подождите...");
+    }
 }

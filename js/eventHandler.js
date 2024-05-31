@@ -1,3 +1,6 @@
+
+
+
 window.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelectorAll('.video');
 
@@ -111,6 +114,7 @@ function submitPhone(event) {
     } else {
         alert("Слишком много запросов. Подождите...")
     }
+    console.log('eventPhone')
 }
 
 /**
@@ -170,15 +174,16 @@ function submitForm() {
             closePopup();
         } 
         if (validateName(name) == false) {
-            alert('Некорректное имя')
+            alert('Некорректное имя');
         }
         
         if (validatePhone(phone) == false) {
-            alert("Некорректный номер телефона")
+            alert("Некорректный номер телефона");
         }
     } else {
-        alert("Слишком много запросов. Подождите...")
+        alert("Слишком много запросов. Подождите...");
     }
+    console.log('eventForm')
 }
 function showPopup() {
     scrollToSection('#anchor-contacts');
@@ -205,4 +210,3 @@ window.onclick = function(event) {
         }
     }
 }
-
